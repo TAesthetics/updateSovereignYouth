@@ -1,0 +1,64 @@
+{% extends 'youth_org/base.html' %}
+
+{% block youth_content %}
+    <h2>Available Youth Organizations</h2>
+    <p>Browse and join one of our youth organizations to get started with cybersecurity training and activities.</p>
+    
+    <div class="organization-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+        {% for org in organizations %}
+            <div class="organization-card" style="border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                {% if org.logo %}
+                    <div style="height: 180px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #f5f7fa;">
+                        <img src="{{ org.logo.url }}" alt="{{ org.name }} logo" style="max-height: 100%; max-width: 100%; object-fit: contain; padding: 1rem;">
+                    </div>
+                {% else %}
+                    <div style="height: 180px; background: #4a6fa5; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">
+                        {{ org.name|first|upper }}
+                    </div>
+                {% endif %}
+                
+                <div style="padding: 1.5rem;">
+                    <h3 style="margin-top: 0; color: #2c3e50;">{{ org.name }}</h3>
+                    <p style="color: #7f8c8d; margin-bottom: 1.5rem; min-height: 60px;">
+                        {{ org.description|truncatewords:20 }}
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.9rem; color: #7f8c8d;">
+                            <i class="fas fa-users"></i> {{ org.member_count }} members
+                        </span>
+                        <a href="{% url 'youth-organization-detail' org.pk %}" class="btn" style="background: #4a6fa5; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-weight: 500;">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <div class="no-organizations" style="grid-column: 1 / -1; text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 8px;">
+                <p style="font-size: 1.1rem; color: #7f8c8d;">No youth organizations are currently available.</p>
+                {% if user.is_staff %}
+                    <a href="{% url 'youth-organization-create' %}" class="btn" style="display: inline-block; margin-top: 1rem; background: #4a6fa5; color: white; padding: 0.5rem 1.5rem; border-radius: 4px; text-decoration: none; font-weight: 500;">
+                        Create an Organization
+                    </a>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    
+    {% if is_paginated %}
+        <div class="pagination" style="margin-top: 2rem; display: flex; justify-content: center; gap: 0.5rem;">
+            {% if page_obj.has_previous %}
+                <a href="?page=1" class="btn" style="padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #2c3e50;">&laquo; First</a>
+                <a href="?page={{ page_obj.previous_page_number }}" class="btn" style="padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #2c3e50;">Previous</a>
+            {% endif %}
+            
+            <span class="current" style="padding: 0.5rem 1rem; color: #2c3e50;">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+            
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}" class="btn" style="padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #2c3e50;">Next</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}" class="btn" style="padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #2c3e50;">Last &raquo;</a>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endblock %}

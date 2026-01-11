@@ -1,0 +1,218 @@
+{% extends 'youth_org/base.html' %}
+
+{% block youth_content %}
+<div class="form-container" style="max-width: 800px; margin: 0 auto;">
+    <h2 style="margin-top: 0; color: #2c3e50; padding-bottom: 1rem; border-bottom: 2px solid #eee; margin-bottom: 2rem;">
+        {% if form.instance.pk %}Update Your{% else %}Join a{% endif %} Youth Organization Profile
+    </h2>
+    <form method="post" enctype="multipart/form-data" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        {% csrf_token %}
+        {% if form.non_field_errors %}
+            <div class="alert alert-danger" style="background: #f8d7da; color: #721c24; padding: 0.75rem 1.25rem; border: 1px solid #f5c6cb; border-radius: 4px; margin-bottom: 1.5rem;">
+                {% for error in form.non_field_errors %}
+                    <p style="margin: 0;">{{ error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+        <div class="form-section" style="margin-bottom: 2.5rem;">
+            <h3 style="color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 0.75rem; margin-bottom: 1.5rem;">
+                <i class="fas fa-user" style="margin-right: 0.5rem;"></i> Personal Information
+            </h3>
+            <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                {% if not form.instance.pk %}
+                <div class="form-group" style="grid-column: span 2;">
+                    <label for="{{ form.organization.id_for_label }}">Organization *</label>
+                    {{ form.organization }}
+                    {% if form.organization.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.organization.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+                <div class="form-group">
+                    <label for="{{ form.date_of_birth.id_for_label }}">Date of Birth *</label>
+                    {{ form.date_of_birth }}
+                    {% if form.date_of_birth.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.date_of_birth.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="{{ form.gender.id_for_label }}">Gender *</label>
+                    {{ form.gender }}
+                    {% if form.gender.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.gender.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="{{ form.phone_number.id_for_label }}">Phone Number</label>
+                    {{ form.phone_number }}
+                    {% if form.phone_number.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.phone_number.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="{{ form.address.id_for_label }}">Address *</label>
+                {{ form.address }}
+                {% if form.address.errors %}
+                    <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                        {{ form.address.errors.0 }}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="form-group">
+                    <label for="{{ form.city.id_for_label }}">City *</label>
+                    {{ form.city }}
+                    {% if form.city.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.city.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="{{ form.postal_code.id_for_label }}">Postal Code *</label>
+                    {{ form.postal_code }}
+                    {% if form.postal_code.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.postal_code.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="{{ form.country.id_for_label }}">Country *</label>
+                    {{ form.country }}
+                    {% if form.country.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.country.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="form-group">
+                    <label for="{{ form.school.id_for_label }}">School</label>
+                    {{ form.school }}
+                    {% if form.school.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.school.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="{{ form.grade.id_for_label }}">Grade (1-13)</label>
+                    {{ form.grade }}
+                    {% if form.grade.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.grade.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="form-section" style="margin-bottom: 2.5rem;">
+            <h3 style="color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 0.75rem; margin-bottom: 1.5rem;">
+                <i class="fas fa-user-shield" style="margin-right: 0.5rem;"></i> Parent/Guardian Information
+            </h3>
+            <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="form-group">
+                    <label for="{{ form.parent_guardian_name.id_for_label }}">Parent/Guardian Name *</label>
+                    {{ form.parent_guardian_name }}
+                    {% if form.parent_guardian_name.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.parent_guardian_name.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="{{ form.parent_guardian_phone.id_for_label }}">Parent/Guardian Phone *</label>
+                    {{ form.parent_guardian_phone }}
+                    {% if form.parent_guardian_phone.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.parent_guardian_phone.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="form-group" style="grid-column: span 2;">
+                    <label for="{{ form.parent_guardian_email.id_for_label }}">Parent/Guardian Email *</label>
+                    {{ form.parent_guardian_email }}
+                    {% if form.parent_guardian_email.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.parent_guardian_email.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="form-section" style="margin-bottom: 2.5rem;">
+            <h3 style="color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 0.75rem; margin-bottom: 1.5rem;">
+                <i class="fas fa-ambulance" style="margin-right: 0.5rem;"></i> Emergency Contact
+            </h3>
+            <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="form-group">
+                    <label for="{{ form.emergency_contact_name.id_for_label }}">Contact Name *</label>
+                    {{ form.emergency_contact_name }}
+                    {% if form.emergency_contact_name.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.emergency_contact_name.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="{{ form.emergency_contact_phone.id_for_label }}">Contact Phone *</label>
+                    {{ form.emergency_contact_phone }}
+                    {% if form.emergency_contact_phone.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.emergency_contact_phone.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="form-group" style="grid-column: span 2;">
+                    <label for="{{ form.emergency_contact_relation.id_for_label }}">Relation *</label>
+                    {{ form.emergency_contact_relation }}
+                    {% if form.emergency_contact_relation.errors %}
+                        <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                            {{ form.emergency_contact_relation.errors.0 }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="form-section" style="margin-bottom: 2.5rem;">
+            <h3 style="color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 0.75rem; margin-bottom: 1.5rem;">
+                <i class="fas fa-lightbulb" style="margin-right: 0.5rem;"></i> Skills & Notes
+            </h3>
+            <div class="form-group">
+                <label for="{{ form.skills.id_for_label }}">Skills/Interests</label>
+                {{ form.skills }}
+                {% if form.skills.errors %}
+                    <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                        {{ form.skills.errors.0 }}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.notes.id_for_label }}">Additional Notes</label>
+                {{ form.notes }}
+                {% if form.notes.errors %}
+                    <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
+                        {{ form.notes.errors.0 }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div style="text-align: right;">
+            <button type="submit" class="btn btn-primary" style="background: #2c3e50; color: white; padding: 0.75rem 2rem; border: none; border-radius: 4px; cursor: pointer; font-size: 1.1rem;">
+                {% if form.instance.pk %}Update{% else %}Join{% endif %}
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}CyberEnigma – The Digital Coil{% endblock %}</title>
+    <meta name="description" content="{% block description %}CyberEnigma is a global study circle focused on cybersecurity, OSINT, privacy, and ethical hacking. Beginners & Pros welcome.{% endblock %}">
+    <meta name="keywords" content="cybersecurity, ethical hacking, privacy, OSINT, infosec, cybersecurity community, learn hacking, cybersecurity education">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="{% block og_title %}CyberEnigma – The Digital Coil{% endblock %}">
+    <meta property="og:description" content="{% block og_desc %}Join our global community of cybersecurity enthusiasts. Learn, share, and grow together.{% endblock %}">
+    <meta property="og:image" content="{% static 'logo.png' %}">
+    <meta property="og:url" content="{{ request.build_absolute_uri|default:'' }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="{{ request.build_absolute_uri|default:'' }}">
+    <link rel="icon" href="{% static 'logo.png' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    {% include 'includes/header.html' %}
+    
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+    
+    {% include 'includes/footer.html' %}
+    
+    {% block extra_scripts %}{% endblock %}
+    
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+            
+            // Close mobile menu when clicking on a nav link
+            const navItems = document.querySelectorAll('.nav-links a');
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

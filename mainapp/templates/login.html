@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Login | Sovereign Youth{% endblock %}
+
+{% block content %}
+<div class="container" style="max-width: 500px; margin: 4rem auto; padding: 0 1rem;">
+    <div class="login-card" style="background: #1a1a1a; border-radius: 8px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+        <div class="login-header" style="text-align: center; margin-bottom: 2rem;">
+            <h2 style="color: #fff; margin-bottom: 0.5rem;">Mitgliederbereich</h2>
+            <p style="color: #aaa; margin-bottom: 2rem;">Zugang zu internen Projekten und Tools</p>
+        </div>
+        
+        <form method="post" class="login-form">
+            {% csrf_token %}
+            
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="id_username" style="display: block; color: #ddd; margin-bottom: 0.5rem;">Benutzername</label>
+                <input type="text" name="username" id="id_username" required 
+                       class="form-input" 
+                       style="width: 100%; padding: 0.75rem; border: 1px solid #333; border-radius: 4px; background: #2a2a2a; color: #fff;">
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                    <label for="id_password" style="color: #ddd;">Passwort</label>
+                    <a href="#" style="color: #4a6fa5; font-size: 0.9rem; text-decoration: none;">Passwort vergessen?</a>
+                </div>
+                <input type="password" name="password" id="id_password" required 
+                       class="form-input" 
+                       style="width: 100%; padding: 0.75rem; border: 1px solid #333; border-radius: 4px; background: #2a2a2a; color: #fff;">
+            </div>
+            
+            {% if form.errors %}
+            <div class="error-message" style="color: #ff6b6b; margin: 1rem 0; text-align: center;">
+                Benutzername oder Passwort falsch.
+            </div>
+            {% endif %}
+            
+            <button type="submit" 
+                    style="width: 100%; padding: 0.75rem; background: #4a6fa5; color: white; border: none; border-radius: 4px; font-weight: 500; cursor: pointer; transition: background 0.2s;">
+                Anmelden
+            </button>
+        </form>
+        
+        <div class="login-footer" style="margin-top: 2rem; text-align: center; color: #777; font-size: 0.9rem;">
+            <p>Noch kein Mitglied? <a href="#" style="color: #4a6fa5; text-decoration: none;">Zum Mitgliedsantrag</a></p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .login-card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .form-input:focus {
+        outline: none;
+        border-color: #4a6fa5 !important;
+    }
+    
+    button:hover {
+        background: #3a5a80 !important;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            padding: 0 1.5rem;
+        }
+    }
+</style>
+{% endblock %}

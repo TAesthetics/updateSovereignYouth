@@ -1,0 +1,631 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_head %}
+<style>
+    /* Section Styling */
+    section {
+        padding: 5rem 0;
+        position: relative;
+        background-color: #1a1a2e;
+        color: #e6e6e6;
+    }
+    
+    section:nth-child(odd) {
+        background-color: #16213e;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+    
+    .section-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2.5rem;
+        color: #e94560;
+        margin-bottom: 1rem;
+    }
+    
+    .section-header p {
+        font-size: 1.2rem;
+        color: #b8b8b8;
+        max-width: 800px;
+        margin: 0 auto 2rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(135deg, #1a1a2e 0%, #2a1a4e 100%);
+        color: white;
+        padding: 8rem 0;
+        text-align: center;
+    }
+    
+    .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .hero img {
+        max-width: 150px;
+        margin-bottom: 2rem;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+    
+    .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.8rem 1.8rem;
+        border-radius: 4px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    
+    .btn-primary {
+        background: #e94560;
+        color: white;
+    }
+    
+    .btn-primary:hover {
+        background: #d63950;
+        transform: translateY(-2px);
+    }
+    
+    .btn-secondary {
+        background: #7289DA;
+        color: white;
+    }
+    
+    .btn-secondary:hover {
+        background: #5b6eae;
+        transform: translateY(-2px);
+    }
+    
+    .btn i {
+        margin-right: 0.5rem;
+    }
+    
+    /* Features Grid */
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    
+    .feature-card {
+        background: #16213e;
+        border: 1px solid #2a2a4e;
+        border-radius: 8px;
+        padding: 2rem;
+        transition: transform 0.3s ease;
+        color: #e6e6e6;
+    }
+    
+    .feature-card:hover {
+        transform: translateY(-5px);
+        border-color: #e94560;
+    }
+    
+    .feature-icon {
+        font-size: 2.5rem;
+        color: #e94560;
+        margin-bottom: 1.5rem;
+    }
+    
+    .feature-card h3,
+    .feature-card h4 {
+        color: #ffffff;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .feature-card p,
+    .feature-card li {
+        color: #b8b8b8;
+    }
+    
+    .member-image {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .member-image img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #e94560;
+    }
+    
+    /* Two Column Layout */
+    .two-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
+    
+    @media (max-width: 768px) {
+        .two-column {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+    }
+    
+    /* Accordion for Ideological Position */
+    .accordion {
+        margin-top: 2rem;
+    }
+    
+    .accordion-item {
+        margin-bottom: 1rem;
+        border: 1px solid #2a2a4e;
+        border-radius: 4px;
+        overflow: hidden;
+        background: #16213e;
+    }
+    
+    .accordion-header {
+        background: #1a1a2e;
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffffff;
+        border-bottom: 1px solid #2a2a4e;
+    }
+    
+    .accordion-content {
+        padding: 1.5rem;
+        background: #16213e;
+        border-top: 1px solid #2a2a4e;
+        color: #b8b8b8;
+    }
+    
+    /* Highlight Box */
+    .highlight-box {
+        background: #16213e;
+        border-left: 4px solid #e94560;
+        padding: 2rem;
+        border-radius: 4px;
+        margin: 2rem 0;
+        color: #e6e6e6;
+    }
+    
+    .highlight-box h3,
+    .highlight-box h4 {
+        color: #ffffff;
+        margin-bottom: 1rem;
+    }
+    
+    .highlight-box p,
+    .highlight-box li {
+        color: #b8b8b8;
+    }
+    
+    .highlight-box strong {
+        color: #e94560;
+    }
+/* Footer */
+    footer {
+        background: #0f0f23;
+        color: #e6e6e6;
+        padding: 3rem 0 1rem;
+    }
+    
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-section h3 {
+        color: #e94560;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-section p,
+    .footer-section li {
+        color: #b8b8b8;
+        margin-bottom: 0.5rem;
+    }
+    
+    .footer-section a {
+        color: #b8b8b8;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .footer-section a:hover {
+        color: #e94560;
+    }
+    
+    .footer-bottom {
+        border-top: 1px solid #2a2a4e;
+        padding-top: 1rem;
+        text-align: center;
+        color: #6c6c6c;
+    }
+    
+    .legal-links {
+        margin-top: 1rem;
+    }
+    
+    .legal-links a {
+        margin: 0 1rem;
+        color: #6c6c6c;
+    }
+    
+    /* Footer styles */
+    footer {
+        background: #0f0f23;
+        color: #e6e6e6;
+        padding: 3rem 0 1rem;
+    }
+    
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-section h3 {
+        color: #e94560;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-section p,
+    .footer-section li {
+        color: #b8b8b8;
+        margin-bottom: 0.5rem;
+    }
+    
+    .footer-section a {
+        color: #b8b8b8;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .footer-section a:hover {
+        color: #e94560;
+    }
+    
+    .footer-bottom {
+        border-top: 1px solid #2a2a4e;
+        padding-top: 1rem;
+        text-align: center;
+        color: #6c6c6c;
+    }
+    
+    .legal-links {
+        margin-top: 1rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content">
+            <img src="{% static 'logo.png' %}" alt="Sovereign Youth Logo" class="main-logo">
+            <h1>Sovereign Youth</h1>
+            <p>Eine Schüler- und Jugendorganisation für Leistung, Verantwortung und souveränes Denken.</p>
+            <p>Wir arbeiten daran, Bildung besser zu machen, Leistung zu steigern und junge Menschen früh in Verantwortung zu bringen – durch Projekte, nicht durch Aktivismus.</p>
+            <div class="cta-buttons">
+                <a href="#mitglied-werden" class="btn btn-primary">
+                    <i class="fas fa-users"></i> Mitglied werden
+                </a>
+                <a href="#digital-coil" class="btn btn-secondary">
+                    <i class="fab fa-discord"></i> The Digital Coil
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wer wir sind Section -->
+<section id="wer-wir-sind">
+    <div class="container">
+        <div class="section-header">
+            <h2>Was wir tun</h2>
+            <p>Sovereign Youth verbindet Bildung, Leistung und praktische Umsetzung.</p>
+        </div>
+        <div class="two-column">
+            <div>
+                <h3>Wir bringen junge Menschen zusammen, die:</h3>
+                <ul>
+                    <li>eigenständig denken</li>
+                    <li>Verantwortung übernehmen</li>
+                    <li>und an realen Problemen arbeiten wollen</li>
+                </ul>
+                <p>Statt leerer Diskussionen setzen wir auf konkrete Projekte, Wissensaufbau und Zusammenarbeit auf Augenhöhe.</p>
+            </div>
+            <div>
+                <h3>Warum das wichtig ist</h3>
+                <p>Schule und formale Bildung vermitteln Inhalte – aber kaum Orientierung, Verantwortung oder praktische Fähigkeiten.</p>
+                <p>Wir schließen diese Lücke:</p>
+                <ul>
+                    <li>durch anwendungsnahe Bildung</li>
+                    <li>durch leistungsorientierte Zusammenarbeit</li>
+                    <li>durch ein Umfeld, das Eigeninitiative belohnt</li>
+                </ul>
+                <p><strong>Leistung steigern</strong> heißt für uns: besser denken, besser lernen, besser handeln.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Programm Section -->
+<section id="programm">
+    <div class="container">
+        <div class="section-header">
+            <h2>Was das konkret heißt</h2>
+            <p>Wie wir organisiert sind</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Bildung verbessern</h3>
+                <p>Workshops & Formate zu:</p>
+                <ul>
+                    <li>finanzieller Bildung</li>
+                    <li>Cybersecurity & IT</li>
+                    <li>Development & Programmieren</li>
+                    <li>künstlicher Intelligenz</li>
+                    <li>gesellschaftlichen & ökonomischen Grundlagen</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Leistung steigern</h3>
+                <p>Netzwerk von ambitionierten Gleichgesinnten</p>
+                <p>gegenseitige Unterstützung bei:</p>
+                <ul>
+                    <li>Lernen & Prüfungen</li>
+                    <li>Ausbildungs- & Jobwahl</li>
+                    <li>Uni-Orientierung</li>
+                    <li>Projekten & Skills</li>
+                </ul>
+                <p><strong>Kein Konsum. Mitarbeit.</strong></p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-sitemap"></i>
+                </div>
+                <h3>Wie wir organisiert sind</h3>
+                <ul>
+                    <li>Sovereign Youth – die Organisation</li>
+                    <li>Thinktank (im Aufbau) – Analyse, Positionen, Konzepte</li>
+                    <li>The Digital Coil – offenes Projekt- & Praxisformat</li>
+                </ul>
+                <p>The Digital Coil ist offen.</p>
+                <p>Mitgliedschaft ist freiwillig, aber verantwortungsbasiert.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- The Digital Coil Section -->
+<section id="digital-coil">
+    <div class="container">
+        <div class="section-header">
+            <h2>The Digital Coil</h2>
+            <p>Ein offener Raum für Projekte, Diskussion, Praxis und Lernen durch Machen</p>
+        </div>
+        <div class="highlight-box">
+            <h3>Keine Mitgliedschaft nötig.</h3>
+            <h3>Kein Vorwissen nötig.</h3>
+            <p>Nur Bereitschaft, mitzudenken und mitzuarbeiten.</p>
+            <div style="margin-top: 2rem;">
+                <h4>Ein offener Raum für:</h4>
+                <ul>
+                    <li>Projekte</li>
+                    <li>Diskussion</li>
+                    <li>Praxis</li>
+                    <li>Lernen durch Machen</li>
+                </ul>
+            </div>
+            <div class="cta-buttons" style="margin-top: 2rem;">
+                <a href="https://discord.gg/gBercTcfzW" class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-discord"></i> Jetzt teilnehmen
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vorstand Section -->
+<section id="vorstand">
+    <div class="container">
+        <div class="section-header">
+            <h2>Unser Vorstand</h2>
+            <p>Die Menschen hinter Sovereign Youth</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="member-image">
+                    <img src="{% static 'IMG_5059.jpg' %}" alt="Terence Nwaeke">
+                </div>
+                <h3>Terence Nwaeke</h3>
+                <p style="color: #e94560; font-weight: 600;">Vorsitzender für IT und Social Media</p>
+                <p>Verantwortlich für die technische Infrastruktur und digitale Präsenz von Sovereign Youth.</p>
+            </div>
+            <div class="feature-card">
+                <div class="member-image">
+                    <img src="{% static 'IMG_5060.jpg' %}" alt="Flora Kohlbacher">
+                </div>
+                <h3>Flora Kohlbacher</h3>
+                <p style="color: #e94560; font-weight: 600;">Vorsitzende für Mitgliederentwicklung</p>
+                <p>Verantwortlich für Kommunikation und Rekrutierung.</p>
+            </div>
+            <div class="feature-card">
+                <div class="member-image">
+                    <img src="{% static 'IMG_5061.jpg' %}" alt="Phillip Auber">
+                </div>
+                <h3>Phillip Auber</h3>
+                <p style="color: #e94560; font-weight: 600;">Stv. Vorsitzender für Organisation</p>
+                <p>Verantwortlich für die organisatorische Abläufe.</p>
+            </div>
+            <div class="feature-card">
+                <div class="member-image">
+                    <img src="{% static 'img_5165.jpg' %}" alt="Gabriel">
+                </div>
+                <h3>Gabriel Hieß</h3>
+                <p style="color: #e94560; font-weight: 600;">Geschäftsführer</p>
+                <p>Verantwortlich für die strategische Führung und operative Leitung.</p>
+            </div>
+            <div class="feature-card">
+                <div class="member-image">
+                    <img src="{% static 'img_5166.jpg' %}" alt="Nelson Ogie">
+                </div>
+                <h3>Nelson Ogie</h3>
+                <p style="color: #e94560; font-weight: 600;">Public Relations</p>
+                <p>Verantwortlich für Öffentlichkeitsarbeit und Medienkommunikation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Schülervertretungsarbeit Section -->
+<section id="schuelervertretung">
+    <div class="container">
+        <div class="section-header">
+            <h2>Schülervertretungsarbeit</h2>
+            <p>Schülervertretung ist für uns ein Praxisfeld, kein Selbstzweck.</p>
+        </div>
+        <div class="two-column">
+            <div>
+                <h3>Wir arbeiten:</h3>
+                <ul>
+                    <li>unabhängig</li>
+                    <li>ohne Partei im Rücken</li>
+                    <li>ohne institutionelle Dachverbände</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Ziel ist nicht Repräsentation um ihrer selbst willen,</h3>
+                <p>sondern konkrete Verbesserungsvorschläge aus der Perspektive der Betroffenen.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mitglied werden Section -->
+<section id="mitglied-werden">
+    <div class="container">
+        <div class="section-header">
+            <h2>Warum mitmachen?</h2>
+            <p>Sovereign Youth richtet sich an Menschen, die nicht nur reden, sondern bauen wollen.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Für Mitglieder</h3>
+                <ul>
+                    <li>reale Projektverantwortung</li>
+                    <li>echte Referenzen (Texte, Events, Formate)</li>
+                    <li>internes Forum als Arbeitsraum</li>
+                    <li>steile Lernkurve durch Umsetzung</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Für Leistungsträger</h3>
+                <ul>
+                    <li>Mitgestaltung von Strategie & Ausrichtung</li>
+                    <li>Leitung von Projekten & Bereichen</li>
+                    <li>langfristige Rolle im Thinktank-Kern</li>
+                    <li>Verantwortung statt Titel</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Mach mit</h3>
+                <p>Ob offen im Digital Coil oder als Mitglied –</p>
+                <div class="cta-buttons" style="margin-top: 2rem;">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOqLdHDq-mtFJI_IoYd1sxyrkm43RqFleCAB7G8T1BsSmJHg/viewform?usp=dialog" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i> Als Mitglied bewerben
+                    </a>
+                    <a href="https://discord.gg/gBercTcfzW" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-discord"></i> Jetzt teilnehmen
+                    </a>
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'member' %}" class="btn btn-primary">
+                            <i class="fas fa-users"></i> Mitgliederbereich
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for Impressum/Datenschutz -->
+<script>
+function showModal(type) {
+    const content = type === 'impressum' ? 
+        'Impressum: [Your impressum content here]' : 
+        'Datenschutz: [Your privacy policy content here]';
+    alert(content);
+}
+</script>
+
+<!-- Structured Data for Organization (SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sovereign Youth",
+  "url": "https://sovereign-youth.org",
+  "logo": "https://sovereign-youth.org/static/logo.png",
+  "sameAs": [
+    "https://discord.gg/gBercTcfzW"
+  ]
+}
+</script>
+{% endblock %}
+
+{% block extra_scripts %}
+<!-- Additional scripts specific to home page -->
+{% endblock %}

@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block extra_head %}
+<style>
+    .youth-org-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .youth-org-header {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #4a6fa5;
+    }
+    
+    .youth-org-header h1 {
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+    }
+    
+    .youth-org-header p {
+        color: #7f8c8d;
+        font-size: 1.1rem;
+    }
+    
+    .youth-org-content {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .youth-org-nav {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .youth-org-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .youth-org-nav li {
+        margin: 0;
+    }
+    
+    .youth-org-nav a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #2c3e50;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+    
+    .youth-org-nav a:hover,
+    .youth-org-nav a.active {
+        background: #4a6fa5;
+        color: white;
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .youth-org-container {
+            padding: 1rem;
+        }
+        
+        .youth-org-content {
+            padding: 1rem;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="global-banner" style="background: #ffd700; color: #2c3e50; text-align: center; padding: 1rem 2rem; font-weight: 600; font-size: 1.1rem; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+    Interested in joining the board? Send an email to <a href="mailto:your@email.com" style="color: #2c3e50; text-decoration: underline; font-weight: bold;">your@email.com</a>
+</div>
+<div class="youth-org-container">
+    <header class="youth-org-header">
+        <h1>Youth Organization Portal</h1>
+        <p>Empowering the next generation of cybersecurity professionals</p>
+    </header>
+    
+    <nav class="youth-org-nav">
+        <ul>
+            <li><a href="{% url 'youth-organization-list' %}" {% if request.path == '/youth/' %}class="active"{% endif %}>Organizations</a></li>
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'youth-dashboard' %}" {% if request.path == '/youth/join/' %}class="active"{% endif %}>My Dashboard</a></li>
+                <li><a href="{% url 'youth-statutes' %}">Statutes</a></li>
+                {% if user.is_staff %}
+                    <li><a href="{% url 'youth-organization-create' %}">Add Organization</a></li>
+                {% endif %}
+            {% endif %}
+        </ul>
+    </nav>
+    
+    <div class="youth-org-content">
+        {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        
+        {% block youth_content %}
+        {% endblock %}
+    </div>
+</div>
+{% endblock %}

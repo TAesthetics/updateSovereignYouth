@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Board - Sovereign Youth{% endblock %}
+
+{% block content %}
+<section class="section board-section" style="padding: 4rem 0;">
+    <div class="container">
+        <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+            <h1 style="font-size: 2.5rem; color: #2c3e50; margin-bottom: 1rem;">Unser Vorstand</h1>
+            <div class="divider" style="width: 100px; height: 3px; background: #4a6fa5; margin: 0 auto 1.5rem;"></div>
+            <p style="color: #666; max-width: 700px; margin: 0 auto 2rem; line-height: 1.6;">
+                Unser engagiertes Team arbeitet ehrenamtlich für die Ziele und Anliegen des Vereins.
+                Lernen Sie die Mitglieder unseres Vorstands kennen.
+            </p>
+        </div>
+
+        <div class="board-members" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; padding: 0 1rem;">
+            {% for member in board_members %}
+            <div class="board-member" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                <div class="member-image" style="height: 300px; overflow: hidden;">
+                    <img src="{% static member.image %}" alt="{{ member.name }}" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="member-info" style="padding: 1.5rem;">
+                    <h3 style="color: #2c3e50; margin-bottom: 0.5rem;">{{ member.name }}</h3>
+                    <p class="position" style="color: #4a6fa5; font-weight: 500; margin-bottom: 1rem;">{{ member.position }}</p>
+                    <p class="bio" style="color: #666; line-height: 1.6; font-size: 0.95rem;">{{ member.bio }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<style>
+    .board-member:hover {
+        transform: translateY(-5px);
+    }
+    
+    @media (max-width: 768px) {
+        .board-members {
+            grid-template-columns: 1fr !important;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+</style>
+{% endblock %}

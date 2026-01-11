@@ -1,0 +1,42 @@
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Sovereign Youth</h3>
+            <p>Empowering the next generation through education, community, and leadership development.</p>
+            <p><strong>Contact:</strong></p>
+            <p>Phone: +436642358516</p>
+            <p>Email: sovereignyouth@cyberenigma.dev</p>
+        </div>
+        <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#wer-wir-sind">Über uns</a></li>
+                <li><a href="#programm">Programm</a></li>
+                <li><a href="#digital-coil">Digital Coil</a></li>
+                <li><a href="#vorstand">Vorstand</a></li>
+                <li><a href="#schuelervertretung">Schülervertretung</a></li>
+                <li><a href="#mitglied-werden">Mitglied werden</a></li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'member' %}">Mitgliederbereich</a></li>
+                {% else %}
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                {% endif %}
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Connect</h3>
+            <div class="social-links">
+                <a href="https://discord.gg/gBercTcfzW" class="social-link discord-button" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-discord"></i> Join The Digital Coil
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Sovereign Youth. All rights reserved.</p>
+        <div class="legal-links">
+            <a href="#" onclick="showModal('impressum')">Impressum</a>
+            <a href="#" onclick="showModal('datenschutz')">Datenschutz</a>
+        </div>
+    </div>
+</footer>

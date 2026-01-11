@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}The Sovereign Youth{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <img src="{% static 'logo.png' %}" alt="The Sovereign Youth Logo" class="main-logo">
+            <div class="teaser-text">
+                <h1>The Sovereign Youth</h1>
+                <p>Selbstständig. Glaubwürdig. Zukunftsbewusst.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section sovereign-youth-section" style="background: #f9f9fc; padding: 3rem 0;">
+    <div class="container">
+        <div class="section-header">
+            <h2>Statuten</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="statutes-content" style="max-width: 900px; margin: 0 auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+            {% include 'youth_org/statutes.html' %}
+        </div>
+    </div>
+</section>
+<section class="section grundsatzprogramm-section" style="background: #f5f8fa; padding: 3rem 0;">
+    <div class="container">
+        <div class="section-header">
+            <h2>Programm</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="grundsatz-content" style="max-width: 900px; margin: 0 auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+            <p>Das Grundsatzprogramm von „The Sovereign Youth“ wird hier vorgestellt.</p>
+            <!-- Add more content as needed -->
+        </div>
+    </div>
+</section>
+{% endblock %}
