@@ -16,9 +16,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.i18n import i18n_patterns, set_language
+from django.conf import settings
+from django.conf.urls.static import static
+from django.views.i18n import set_language as set_lang_view
 
 urlpatterns = [
-    path('', include('mainapp.urls')),    # deine App einbinden
+    path('i18n/setlang/', set_lang_view, name='set_language'),
     path('admin/', admin.site.urls),
 ]
+
+# Add i18n patterns without prefix for the default language (German)
+urlpatterns += i18n_patterns(
+    path('', include('mainapp.urls')),
+    prefix_default_language=False
+)
+
+# Serve static files during development
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

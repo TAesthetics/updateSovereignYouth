@@ -1,4 +1,5 @@
 {% extends 'youth_org/base.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block title %}Statuten - Sovereign Youth{% endblock %}
@@ -7,8 +8,8 @@
 <section class="section" style="padding: 4rem 0;">
     <div class="container">
         <div class="youth-org-header">
-            <h1>Statuten</h1>
-            <p>des Vereins „The Sovereign Youth“</p>
+            <h1>{% trans 'Statuten' %}</h1>
+            <p>{% trans 'des Vereins „The Sovereign Youth“' %}</p>
         </div>
         
         <div class="youth-org-content">
@@ -34,101 +35,101 @@
             </style>
             
             <div class="statutes-content">
-                <h2>§1 Name, Sitz und Tätigkeitsbereich</h2>
+                <h2>{% trans '§1 Name, Sitz und Tätigkeitsbereich' %}</h2>
                 <ol>
-                    <li>Der Verein führt den Namen „The Sovereign Youth“.</li>
-                    <li>Er hat seinen Sitz in Salzburg und erstreckt seine Tätigkeit auf ganz Österreich und Europa.</li>
-                    <li>Die Errichtung von Zweigvereinen und lokalen Gruppen ist vorgesehen.</li>
+                    <li>{% trans 'Der Verein führt den Namen „The Sovereign Youth“.' %}</li>
+                    <li>{% trans 'Er hat seinen Sitz in Salzburg und erstreckt seine Tätigkeit auf ganz Österreich und Europa.' %}</li>
+                    <li>{% trans 'Die Errichtung von Zweigvereinen und lokalen Gruppen ist vorgesehen.' %}</li>
                 </ol>
 
-                <h2>§2 Zweck des Vereins</h2>
+                <h2>{% trans '§2 Zweck des Vereins' %}</h2>
                 <ol>
-                    <li>Der Verein ist nicht auf Gewinn gerichtet und verfolgt ausschließlich gemeinnützige Zwecke.</li>
-                    <li>Ziel ist die Förderung einer wertebasierten Jugendkultur auf Grundlage von geistiger Freiheit, Eigenverantwortung und europäischer Kultur.</li>
-                    <li>Der Verein ist überparteilich und unabhängig.</li>
-                    <li>Die Tätigkeit gliedert sich in zwei klar getrennte Bereiche:
+                    <li>{% trans 'Der Verein ist nicht auf Gewinn gerichtet und verfolgt ausschließlich gemeinnützige Zwecke.' %}</li>
+                    <li>{% trans 'Ziel ist die Förderung einer wertebasierten Jugendkultur auf Grundlage von geistiger Freiheit, Eigenverantwortung und europäischer Kultur.' %}</li>
+                    <li>{% trans 'Der Verein ist überparteilich und unabhängig.' %}</li>
+                    <li>{% trans 'Die Tätigkeit gliedert sich in zwei klar getrennte Bereiche:' %}
                         <ul>
-                            <li>Sovereign Students – schulpolitisch und gesellschaftlich aktiv</li>
-                            <li>The Digital Coil – bildungs- und technikorientiertes Lernprojekt</li>
+                            <li>{% trans 'Sovereign Students – schulpolitisch und gesellschaftlich aktiv' %}</li>
+                            <li>{% trans 'The Digital Coil – bildungs- und technikorientiertes Lernprojekt' %}</li>
                         </ul>
                     </li>
                 </ol>
 
-                <h2>§3 Mittel zur Erreichung des Vereinszwecks</h2>
-                <p>Die Ziele werden verwirklicht durch:</p>
+                <h2>{% trans '§3 Mittel zur Erreichung des Vereinszwecks' %}</h2>
+                <p>{% trans 'Die Ziele werden verwirklicht durch:' %}</p>
                 <ul>
-                    <li>Veranstaltungen, Workshops, Seminare und Diskussionen</li>
-                    <li>Online-Formate, Lernzirkel, Publikationen</li>
-                    <li>Öffentlichkeitsarbeit und Kampagnen</li>
-                    <li>Aufbau eines Netzwerks junger engagierter Menschen</li>
-                    <li>Zusammenarbeit mit Schulen, Organisationen und freien Initiativen</li>
+                    <li>{% trans 'Veranstaltungen, Workshops, Seminare und Diskussionen' %}</li>
+                    <li>{% trans 'Online-Formate, Lernzirkel, Publikationen' %}</li>
+                    <li>{% trans 'Öffentlichkeitsarbeit und Kampagnen' %}</li>
+                    <li>{% trans 'Aufbau eines Netzwerks junger engagierter Menschen' %}</li>
+                    <li>{% trans 'Zusammenarbeit mit Schulen, Organisationen und freien Initiativen' %}</li>
                 </ul>
 
-                <h2>§4 Mitgliedschaft</h2>
+                <h2>{% trans '§4 Mitgliedschaft' %}</h2>
                 <ol>
-                    <li>Mitglied kann jede natürliche Person werden, die die Ziele unterstützt.</li>
-                    <li>Mitgliedsarten:
+                    <li>{% trans 'Mitglied kann jede natürliche Person werden, die die Ziele unterstützt.' %}</li>
+                    <li>{% trans 'Mitgliedsarten:' %}
                         <ul>
-                            <li>Aktivmitglieder (14–35 Jahre)</li>
-                            <li>Fördermitglieder (ab 36 Jahren oder unterstützend)</li>
-                            <li>Ehrenmitglieder (auf Vorschlag durch die Generalversammlung)</li>
+                            <li>{% trans 'Aktivmitglieder (14–35 Jahre)' %}</li>
+                            <li>{% trans 'Fördermitglieder (ab 36 Jahren oder unterstützend)' %}</li>
+                            <li>{% trans 'Ehrenmitglieder (auf Vorschlag durch die Generalversammlung)' %}</li>
                         </ul>
                     </li>
-                    <li>Voraussetzung: Zustimmung zu den Grundwerten (Demokratie, Menschenwürde, geistige Freiheit, Eigenverantwortung).</li>
+                    <li>{% trans 'Voraussetzung: Zustimmung zu den Grundwerten (Demokratie, Menschenwürde, geistige Freiheit, Eigenverantwortung).' %}</li>
                 </ol>
 
-                <h2>§5 Rechte und Pflichten der Mitglieder</h2>
+                <h2>{% trans '§5 Rechte und Pflichten der Mitglieder' %}</h2>
                 <ol>
-                    <li>Teilnahme an Vereinsaktivitäten.</li>
-                    <li>Aktivmitglieder besitzen Stimmrecht in der Generalversammlung.</li>
-                    <li>Mitglieder verpflichten sich zur Einhaltung der Statuten und Unterstützung des Vereinszwecks.</li>
+                    <li>{% trans 'Teilnahme an Vereinsaktivitäten.' %}</li>
+                    <li>{% trans 'Aktivmitglieder besitzen Stimmrecht in der Generalversammlung.' %}</li>
+                    <li>{% trans 'Mitglieder verpflichten sich zur Einhaltung der Statuten und Unterstützung des Vereinszwecks.' %}</li>
                 </ol>
 
-                <h2>§6 Organe des Vereins</h2>
+                <h2>{% trans '§6 Organe des Vereins' %}</h2>
                 <ul>
-                    <li>Generalversammlung</li>
-                    <li>Vorstand</li>
-                    <li>Rechnungsprüfer:innen</li>
-                    <li>Bereichsleitungen (optional)</li>
+                    <li>{% trans 'Generalversammlung' %}</li>
+                    <li>{% trans 'Vorstand' %}</li>
+                    <li>{% trans 'Rechnungsprüfer:innen' %}</li>
+                    <li>{% trans 'Bereichsleitungen (optional)' %}</li>
                 </ul>
 
-                <h2>§7 Generalversammlung</h2>
+                <h2>{% trans '§7 Generalversammlung' %}</h2>
                 <ol>
-                    <li>Höchstes Organ, mind. einmal jährlich.</li>
-                    <li>Zuständig für:
+                    <li>{% trans 'Höchstes Organ, mind. einmal jährlich.' %}</li>
+                    <li>{% trans 'Zuständig für:' %}
                         <ul>
-                            <li>Wahl/Entlastung des Vorstands</li>
-                            <li>Statutenänderungen</li>
-                            <li>Grundsatzentscheidungen</li>
-                            <li>Auflösung</li>
+                            <li>{% trans 'Wahl/Entlastung des Vorstands' %}</li>
+                            <li>{% trans 'Statutenänderungen' %}</li>
+                            <li>{% trans 'Grundsatzentscheidungen' %}</li>
+                            <li>{% trans 'Auflösung' %}</li>
                         </ul>
                     </li>
                 </ol>
 
-                <h2>§8 Vorstand</h2>
+                <h2>{% trans '§8 Vorstand' %}</h2>
                 <ol>
-                    <li>Besteht aus mindestens drei Personen:
+                    <li>{% trans 'Besteht aus mindestens drei Personen:' %}
                         <ul>
-                            <li>Obmann/Obfrau</li>
-                            <li>Kassier:in</li>
-                            <li>Schriftführer:in</li>
-                            <li>(Optional: Stellvertretung für Obmann/Obfrau)</li>
+                            <li>{% trans 'Obmann/Obfrau' %}</li>
+                            <li>{% trans 'Kassier:in' %}</li>
+                            <li>{% trans 'Schriftführer:in' %}</li>
+                            <li>{% trans '(Optional: Stellvertretung für Obmann/Obfrau)' %}</li>
                         </ul>
                     </li>
-                    <li>Führt laufende Geschäfte, vertritt den Verein nach außen.</li>
-                    <li>Funktionsperiode: zwei Jahre, Wiederwahl möglich.</li>
+                    <li>{% trans 'Führt laufende Geschäfte, vertritt den Verein nach außen.' %}</li>
+                    <li>{% trans 'Funktionsperiode: zwei Jahre, Wiederwahl möglich.' %}</li>
                 </ol>
 
-                <h2>§9 Rechnungsprüfer:innen</h2>
+                <h2>{% trans '§9 Rechnungsprüfer:innen' %}</h2>
                 <ol>
-                    <li>Zwei Personen, gewählt von der Generalversammlung für zwei Jahre.</li>
-                    <li>Prüfen Finanzen, berichten der Generalversammlung.</li>
+                    <li>{% trans 'Zwei Personen, gewählt von der Generalversammlung für zwei Jahre.' %}</li>
+                    <li>{% trans 'Prüfen Finanzen, berichten der Generalversammlung.' %}</li>
                 </ol>
 
-                <h2>§10 Auflösung des Vereins</h2>
+                <h2>{% trans '§10 Auflösung des Vereins' %}</h2>
                 <ol>
-                    <li>Nur mit Zweidrittelmehrheit in einer eigens einberufenen Generalversammlung.</li>
-                    <li>Vereinsvermögen fällt an eine gemeinnützige Organisation mit ähnlichem Zweck.</li>
+                    <li>{% trans 'Nur mit Zweidrittelmehrheit in einer eigens einberufenen Generalversammlung.' %}</li>
+                    <li>{% trans 'Vereinsvermögen fällt an eine gemeinnützige Organisation mit ähnlichem Zweck.' %}</li>
                 </ol>
             </div>
         </div>

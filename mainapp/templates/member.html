@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block title %}Mitgliederbereich | Sovereign Youth{% endblock %}
@@ -147,9 +148,9 @@
 {% block content %}
 <div class="forum-container">
     <div class="forum-header">
-        <h2>Mitgliederforum</h2>
-        <span class="beta-badge">Beta</span>
-        <p style="color: #b8b8b8; margin-top: 1rem;">Interner Austausch für Mitglieder von Sovereign Youth</p>
+        <h2>{% trans 'Mitgliederforum' %}</h2>
+        <span class="beta-badge">{% trans 'Beta' %}</span>
+        <p style="color: #b8b8b8; margin-top: 1rem;">{% trans 'Interner Austausch für Mitglieder von Sovereign Youth' %}</p>
     </div>
     
     <div class="forum-channels">
@@ -168,14 +169,14 @@
                 <span class="content">{{ msg.content|linebreaksbr }}</span>
             </div>
         {% empty %}
-            <div class="no-messages">Noch keine Nachrichten im Channel.</div>
+            <div class="no-messages">{% trans 'Noch keine Nachrichten im Channel.' %}</div>
         {% endfor %}
     </div>
     
     <form class="forum-form" method="post" style="display: flex; gap: 1rem;">
         {% csrf_token %}
         <input type="text" name="content" placeholder="Nachricht schreiben..." autocomplete="off" required>
-        <button type="submit">Senden</button>
+        <button type="submit">{% trans 'Senden' %}</button>
     </form>
 </div>
 {% endblock %}

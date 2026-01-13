@@ -1,8 +1,9 @@
+{% load i18n %}
 {% extends 'youth_org/base.html' %}
 
 {% block youth_content %}
-    <h2>Available Youth Organizations</h2>
-    <p>Browse and join one of our youth organizations to get started with cybersecurity training and activities.</p>
+    <h2>{% trans 'Available Youth Organizations' %}</h2>
+    <p>{% trans 'Browse and join one of our youth organizations to get started with cybersecurity training and activities.' %}</p>
     
     <div class="organization-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
         {% for org in organizations %}
@@ -34,7 +35,7 @@
             </div>
         {% empty %}
             <div class="no-organizations" style="grid-column: 1 / -1; text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 8px;">
-                <p style="font-size: 1.1rem; color: #7f8c8d;">No youth organizations are currently available.</p>
+                <p style="font-size: 1.1rem; color: #7f8c8d;">{% trans 'No youth organizations are currently available.' %}</p>
                 {% if user.is_staff %}
                     <a href="{% url 'youth-organization-create' %}" class="btn" style="display: inline-block; margin-top: 1rem; background: #4a6fa5; color: white; padding: 0.5rem 1.5rem; border-radius: 4px; text-decoration: none; font-weight: 500;">
                         Create an Organization
@@ -48,7 +49,7 @@
         <div class="pagination" style="margin-top: 2rem; display: flex; justify-content: center; gap: 0.5rem;">
             {% if page_obj.has_previous %}
                 <a href="?page=1" class="btn" style="padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #2c3e50;">&laquo; First</a>
-                <a href="?page={{ page_obj.previous_page_number }}" class="btn" style="padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #2c3e50;">Previous</a>
+                <a href="?page={{ page_obj.previous_page_number }}" class="btn" style="padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #2c3e50;">{% trans 'Previous' %}</a>
             {% endif %}
             
             <span class="current" style="padding: 0.5rem 1rem; color: #2c3e50;">
@@ -56,7 +57,7 @@
             </span>
             
             {% if page_obj.has_next %}
-                <a href="?page={{ page_obj.next_page_number }}" class="btn" style="padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #2c3e50;">Next</a>
+                <a href="?page={{ page_obj.next_page_number }}" class="btn" style="padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #2c3e50;">{% trans 'Next' %}</a>
                 <a href="?page={{ page_obj.paginator.num_pages }}" class="btn" style="padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #2c3e50;">Last &raquo;</a>
             {% endif %}
         </div>

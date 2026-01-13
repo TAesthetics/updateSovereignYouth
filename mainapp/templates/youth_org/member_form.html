@@ -1,3 +1,4 @@
+{% load i18n %}
 {% extends 'youth_org/base.html' %}
 
 {% block youth_content %}
@@ -16,12 +17,12 @@
         {% endif %}
         <div class="form-section" style="margin-bottom: 2.5rem;">
             <h3 style="color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 0.75rem; margin-bottom: 1.5rem;">
-                <i class="fas fa-user" style="margin-right: 0.5rem;"></i> Personal Information
+                <i class="fas fa-user" style="margin-right: 0.5rem;"></i>{% trans 'Personal Information' %}
             </h3>
             <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
                 {% if not form.instance.pk %}
                 <div class="form-group" style="grid-column: span 2;">
-                    <label for="{{ form.organization.id_for_label }}">Organization *</label>
+                    <label for="{{ form.organization.id_for_label }}">{% trans 'Organization *' %}</label>
                     {{ form.organization }}
                     {% if form.organization.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -31,7 +32,7 @@
                 </div>
                 {% endif %}
                 <div class="form-group">
-                    <label for="{{ form.date_of_birth.id_for_label }}">Date of Birth *</label>
+                    <label for="{{ form.date_of_birth.id_for_label }}">{% trans 'Date of Birth *' %}</label>
                     {{ form.date_of_birth }}
                     {% if form.date_of_birth.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -40,7 +41,7 @@
                     {% endif %}
                 </div>
                 <div class="form-group">
-                    <label for="{{ form.gender.id_for_label }}">Gender *</label>
+                    <label for="{{ form.gender.id_for_label }}">{% trans 'Gender *' %}</label>
                     {{ form.gender }}
                     {% if form.gender.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -49,7 +50,7 @@
                     {% endif %}
                 </div>
                 <div class="form-group">
-                    <label for="{{ form.phone_number.id_for_label }}">Phone Number</label>
+                    <label for="{{ form.phone_number.id_for_label }}">{% trans 'Phone Number' %}</label>
                     {{ form.phone_number }}
                     {% if form.phone_number.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -59,7 +60,7 @@
                 </div>
             </div>
             <div class="form-group" style="margin-bottom: 1.5rem;">
-                <label for="{{ form.address.id_for_label }}">Address *</label>
+                <label for="{{ form.address.id_for_label }}">{% trans 'Address *' %}</label>
                 {{ form.address }}
                 {% if form.address.errors %}
                     <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -69,7 +70,7 @@
             </div>
             <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
                 <div class="form-group">
-                    <label for="{{ form.city.id_for_label }}">City *</label>
+                    <label for="{{ form.city.id_for_label }}">{% trans 'City *' %}</label>
                     {{ form.city }}
                     {% if form.city.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -78,7 +79,7 @@
                     {% endif %}
                 </div>
                 <div class="form-group">
-                    <label for="{{ form.postal_code.id_for_label }}">Postal Code *</label>
+                    <label for="{{ form.postal_code.id_for_label }}">{% trans 'Postal Code *' %}</label>
                     {{ form.postal_code }}
                     {% if form.postal_code.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -87,7 +88,7 @@
                     {% endif %}
                 </div>
                 <div class="form-group">
-                    <label for="{{ form.country.id_for_label }}">Country *</label>
+                    <label for="{{ form.country.id_for_label }}">{% trans 'Country *' %}</label>
                     {{ form.country }}
                     {% if form.country.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -98,7 +99,7 @@
             </div>
             <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
                 <div class="form-group">
-                    <label for="{{ form.school.id_for_label }}">School</label>
+                    <label for="{{ form.school.id_for_label }}">{% trans 'School' %}</label>
                     {{ form.school }}
                     {% if form.school.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -107,7 +108,7 @@
                     {% endif %}
                 </div>
                 <div class="form-group">
-                    <label for="{{ form.grade.id_for_label }}">Grade (1-13)</label>
+                    <label for="{{ form.grade.id_for_label }}">{% trans 'Grade (1-13)' %}</label>
                     {{ form.grade }}
                     {% if form.grade.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -119,11 +120,11 @@
         </div>
         <div class="form-section" style="margin-bottom: 2.5rem;">
             <h3 style="color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 0.75rem; margin-bottom: 1.5rem;">
-                <i class="fas fa-user-shield" style="margin-right: 0.5rem;"></i> Parent/Guardian Information
+                <i class="fas fa-user-shield" style="margin-right: 0.5rem;"></i>{% trans 'Parent/Guardian Information' %}
             </h3>
             <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
                 <div class="form-group">
-                    <label for="{{ form.parent_guardian_name.id_for_label }}">Parent/Guardian Name *</label>
+                    <label for="{{ form.parent_guardian_name.id_for_label }}">{% trans 'Parent/Guardian Name *' %}</label>
                     {{ form.parent_guardian_name }}
                     {% if form.parent_guardian_name.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -132,7 +133,7 @@
                     {% endif %}
                 </div>
                 <div class="form-group">
-                    <label for="{{ form.parent_guardian_phone.id_for_label }}">Parent/Guardian Phone *</label>
+                    <label for="{{ form.parent_guardian_phone.id_for_label }}">{% trans 'Parent/Guardian Phone *' %}</label>
                     {{ form.parent_guardian_phone }}
                     {% if form.parent_guardian_phone.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -141,7 +142,7 @@
                     {% endif %}
                 </div>
                 <div class="form-group" style="grid-column: span 2;">
-                    <label for="{{ form.parent_guardian_email.id_for_label }}">Parent/Guardian Email *</label>
+                    <label for="{{ form.parent_guardian_email.id_for_label }}">{% trans 'Parent/Guardian Email *' %}</label>
                     {{ form.parent_guardian_email }}
                     {% if form.parent_guardian_email.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -153,11 +154,11 @@
         </div>
         <div class="form-section" style="margin-bottom: 2.5rem;">
             <h3 style="color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 0.75rem; margin-bottom: 1.5rem;">
-                <i class="fas fa-ambulance" style="margin-right: 0.5rem;"></i> Emergency Contact
+                <i class="fas fa-ambulance" style="margin-right: 0.5rem;"></i>{% trans 'Emergency Contact' %}
             </h3>
             <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
                 <div class="form-group">
-                    <label for="{{ form.emergency_contact_name.id_for_label }}">Contact Name *</label>
+                    <label for="{{ form.emergency_contact_name.id_for_label }}">{% trans 'Contact Name *' %}</label>
                     {{ form.emergency_contact_name }}
                     {% if form.emergency_contact_name.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -166,7 +167,7 @@
                     {% endif %}
                 </div>
                 <div class="form-group">
-                    <label for="{{ form.emergency_contact_phone.id_for_label }}">Contact Phone *</label>
+                    <label for="{{ form.emergency_contact_phone.id_for_label }}">{% trans 'Contact Phone *' %}</label>
                     {{ form.emergency_contact_phone }}
                     {% if form.emergency_contact_phone.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -175,7 +176,7 @@
                     {% endif %}
                 </div>
                 <div class="form-group" style="grid-column: span 2;">
-                    <label for="{{ form.emergency_contact_relation.id_for_label }}">Relation *</label>
+                    <label for="{{ form.emergency_contact_relation.id_for_label }}">{% trans 'Relation *' %}</label>
                     {{ form.emergency_contact_relation }}
                     {% if form.emergency_contact_relation.errors %}
                         <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -187,10 +188,10 @@
         </div>
         <div class="form-section" style="margin-bottom: 2.5rem;">
             <h3 style="color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 0.75rem; margin-bottom: 1.5rem;">
-                <i class="fas fa-lightbulb" style="margin-right: 0.5rem;"></i> Skills & Notes
+                <i class="fas fa-lightbulb" style="margin-right: 0.5rem;"></i>Skills & Notes
             </h3>
             <div class="form-group">
-                <label for="{{ form.skills.id_for_label }}">Skills/Interests</label>
+                <label for="{{ form.skills.id_for_label }}">{% trans 'Skills/Interests' %}</label>
                 {{ form.skills }}
                 {% if form.skills.errors %}
                     <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">
@@ -199,7 +200,7 @@
                 {% endif %}
             </div>
             <div class="form-group">
-                <label for="{{ form.notes.id_for_label }}">Additional Notes</label>
+                <label for="{{ form.notes.id_for_label }}">{% trans 'Additional Notes' %}</label>
                 {{ form.notes }}
                 {% if form.notes.errors %}
                     <div class="error-message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 0.25rem;">

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block title %}Board - Sovereign Youth{% endblock %}
@@ -7,7 +8,7 @@
 <section class="section board-section" style="padding: 4rem 0;">
     <div class="container">
         <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
-            <h1 style="font-size: 2.5rem; color: #2c3e50; margin-bottom: 1rem;">Unser Vorstand</h1>
+            <h1 style="font-size: 2.5rem; color: #2c3e50; margin-bottom: 1rem;">{% trans 'Unser Vorstand' %}</h1>
             <div class="divider" style="width: 100px; height: 3px; background: #4a6fa5; margin: 0 auto 1.5rem;"></div>
             <p style="color: #666; max-width: 700px; margin: 0 auto 2rem; line-height: 1.6;">
                 Unser engagiertes Team arbeitet ehrenamtlich für die Ziele und Anliegen des Vereins.

@@ -1,0 +1,1316 @@
+# English translations for Sovereign Youth
+# Copyright (C) 2026 Sovereign Youth
+# This file is distributed under the same license as the Sovereign Youth package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-13 06:36+0100\n"
+"PO-Revision-Date: 2026-01-13 06:10+0100\n"
+"Last-Translator: Sovereign Youth Team <info@sovereign-youth.org>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: mainapp/templates/home.html:343 mainapp/templates/includes/footer.html:5
+msgid "Sovereign Youth"
+msgstr ""
+
+#: mainapp/templates/home.html:344 mainapp/translations.py:4
+msgid ""
+"Eine Schüler- und Jugendorganisation für Leistung, Verantwortung und "
+"souveränes Denken."
+msgstr ""
+
+#: mainapp/templates/home.html:345 mainapp/translations.py:5
+msgid ""
+"Wir arbeiten daran, Bildung besser zu machen, Leistung zu steigern und junge "
+"Menschen früh in Verantwortung zu bringen – durch Projekte, nicht durch "
+"Aktivismus."
+msgstr ""
+
+#: mainapp/templates/home.html:348 mainapp/templates/includes/footer.html:19
+#: mainapp/templates/includes/header.html:35 mainapp/translations.py:6
+msgid "Mitglied werden"
+msgstr "Become a Member"
+
+#: mainapp/templates/home.html:351 mainapp/templates/home.html:448
+#: mainapp/templates/includes/header.html:32 mainapp/translations.py:7
+msgid "The Digital Coil"
+msgstr "The Digital Coil"
+
+#: mainapp/templates/home.html:362 mainapp/translations.py:9
+msgid "Was wir tun"
+msgstr ""
+
+#: mainapp/templates/home.html:363 mainapp/translations.py:10
+msgid "Sovereign Youth verbindet Bildung, Leistung und praktische Umsetzung."
+msgstr ""
+
+#: mainapp/templates/home.html:367 mainapp/translations.py:11
+msgid "Wir bringen junge Menschen zusammen, die:"
+msgstr ""
+
+#: mainapp/templates/home.html:369 mainapp/translations.py:12
+msgid "eigenständig denken"
+msgstr ""
+
+#: mainapp/templates/home.html:370 mainapp/translations.py:13
+msgid "Verantwortung übernehmen"
+msgstr ""
+
+#: mainapp/templates/home.html:371 mainapp/translations.py:14
+msgid "und an realen Problemen arbeiten wollen"
+msgstr ""
+
+#: mainapp/templates/home.html:373 mainapp/translations.py:15
+msgid ""
+"Statt leerer Diskussionen setzen wir auf konkrete Projekte, Wissensaufbau "
+"und Zusammenarbeit auf Augenhöhe."
+msgstr ""
+
+#: mainapp/templates/home.html:376 mainapp/translations.py:16
+msgid "Warum das wichtig ist"
+msgstr ""
+
+#: mainapp/templates/home.html:377 mainapp/translations.py:17
+msgid ""
+"Schule und formale Bildung vermitteln Inhalte – aber kaum Orientierung, "
+"Verantwortung oder praktische Fähigkeiten."
+msgstr ""
+
+#: mainapp/templates/home.html:378 mainapp/translations.py:18
+msgid "Wir schließen diese Lücke:"
+msgstr ""
+
+#: mainapp/templates/home.html:380 mainapp/translations.py:19
+msgid "durch anwendungsnahe Bildung"
+msgstr ""
+
+#: mainapp/templates/home.html:381 mainapp/translations.py:20
+msgid "durch leistungsorientierte Zusammenarbeit"
+msgstr ""
+
+#: mainapp/templates/home.html:382 mainapp/translations.py:21
+msgid "durch ein Umfeld, das Eigeninitiative belohnt"
+msgstr ""
+
+#: mainapp/templates/home.html:384 mainapp/templates/home.html:416
+#: mainapp/translations.py:22
+msgid "Leistung steigern"
+msgstr ""
+
+#: mainapp/templates/home.html:384 mainapp/translations.py:23
+msgid "heißt für uns: besser denken, besser lernen, besser handeln."
+msgstr ""
+
+#: mainapp/templates/home.html:394 mainapp/translations.py:24
+msgid "Was das konkret heißt"
+msgstr ""
+
+#: mainapp/templates/home.html:395 mainapp/templates/home.html:431
+#: mainapp/translations.py:25
+msgid "Wie wir organisiert sind"
+msgstr ""
+
+#: mainapp/templates/home.html:402 mainapp/translations.py:26
+msgid "Bildung verbessern"
+msgstr ""
+
+#: mainapp/templates/home.html:405 mainapp/translations.py:28
+msgid "finanzieller Bildung"
+msgstr ""
+
+#: mainapp/templates/home.html:408 mainapp/translations.py:31
+msgid "künstlicher Intelligenz"
+msgstr ""
+
+#: mainapp/templates/home.html:417 mainapp/translations.py:33
+msgid "Netzwerk von ambitionierten Gleichgesinnten"
+msgstr ""
+
+#: mainapp/templates/home.html:418 mainapp/translations.py:34
+msgid "gegenseitige Unterstützung bei:"
+msgstr ""
+
+#: mainapp/templates/home.html:422 mainapp/translations.py:37
+msgid "Uni-Orientierung"
+msgstr ""
+
+#: mainapp/templates/home.html:425 mainapp/translations.py:39
+msgid "Kein Konsum. Mitarbeit."
+msgstr ""
+
+#: mainapp/templates/home.html:433 mainapp/translations.py:40
+msgid "Sovereign Youth – die Organisation"
+msgstr ""
+
+#: mainapp/templates/home.html:434 mainapp/translations.py:41
+msgid "Thinktank (im Aufbau) – Analyse, Positionen, Konzepte"
+msgstr ""
+
+#: mainapp/templates/home.html:437 mainapp/translations.py:43
+#, fuzzy
+#| msgid "The Digital Coil"
+msgid "The Digital Coil ist offen."
+msgstr "The Digital Coil"
+
+#: mainapp/templates/home.html:438 mainapp/translations.py:44
+msgid "Mitgliedschaft ist freiwillig, aber verantwortungsbasiert."
+msgstr ""
+
+#: mainapp/templates/home.html:449 mainapp/translations.py:45
+msgid ""
+"Ein offener Raum für Projekte, Diskussion, Praxis und Lernen durch Machen"
+msgstr ""
+
+#: mainapp/templates/home.html:452 mainapp/translations.py:46
+msgid "Keine Mitgliedschaft nötig."
+msgstr ""
+
+#: mainapp/templates/home.html:453 mainapp/translations.py:47
+msgid "Kein Vorwissen nötig."
+msgstr ""
+
+#: mainapp/templates/home.html:454 mainapp/translations.py:48
+msgid "Nur Bereitschaft, mitzudenken und mitzuarbeiten."
+msgstr ""
+
+#: mainapp/templates/home.html:456 mainapp/translations.py:49
+msgid "Ein offener Raum für:"
+msgstr ""
+
+#: mainapp/templates/home.html:458 mainapp/translations.py:50
+msgid "Projekte"
+msgstr ""
+
+#: mainapp/templates/home.html:459 mainapp/translations.py:51
+msgid "Diskussion"
+msgstr ""
+
+#: mainapp/templates/home.html:460 mainapp/translations.py:52
+msgid "Praxis"
+msgstr ""
+
+#: mainapp/templates/home.html:461 mainapp/translations.py:53
+msgid "Lernen durch Machen"
+msgstr ""
+
+#: mainapp/templates/home.html:466 mainapp/templates/home.html:592
+#: mainapp/translations.py:54
+msgid "Jetzt teilnehmen"
+msgstr ""
+
+#: mainapp/templates/home.html:477 mainapp/templates/youth_org/board.html:11
+#: mainapp/translations.py:55
+#, fuzzy
+#| msgid "Vorstand"
+msgid "Unser Vorstand"
+msgstr "Board"
+
+#: mainapp/templates/home.html:478 mainapp/translations.py:56
+msgid "Die Menschen hinter Sovereign Youth"
+msgstr ""
+
+#: mainapp/templates/home.html:485
+msgid "Terence Nwaeke"
+msgstr ""
+
+#: mainapp/templates/home.html:486 mainapp/translations.py:57
+msgid "Vorsitzender für IT und Social Media"
+msgstr ""
+
+#: mainapp/templates/home.html:487 mainapp/translations.py:58
+msgid ""
+"Verantwortlich für die technische Infrastruktur und digitale Präsenz von "
+"Sovereign Youth."
+msgstr ""
+
+#: mainapp/templates/home.html:493
+msgid "Flora Kohlbacher"
+msgstr ""
+
+#: mainapp/templates/home.html:494 mainapp/translations.py:59
+msgid "Vorsitzende für Mitgliederentwicklung"
+msgstr ""
+
+#: mainapp/templates/home.html:495 mainapp/translations.py:60
+msgid "Verantwortlich für Kommunikation und Rekrutierung."
+msgstr ""
+
+#: mainapp/templates/home.html:501
+msgid "Phillip Auber"
+msgstr ""
+
+#: mainapp/templates/home.html:502 mainapp/translations.py:61
+msgid "Stv. Vorsitzender für Organisation"
+msgstr ""
+
+#: mainapp/templates/home.html:503
+msgid "Verantwortlich für die organisatorische Abläufe."
+msgstr ""
+
+#: mainapp/templates/home.html:509
+msgid "Gabriel Hieß"
+msgstr ""
+
+#: mainapp/templates/home.html:510 mainapp/translations.py:63
+msgid "Geschäftsführer"
+msgstr ""
+
+#: mainapp/templates/home.html:511 mainapp/translations.py:64
+msgid "Verantwortlich für die strategische Führung und operative Leitung."
+msgstr ""
+
+#: mainapp/templates/home.html:517
+msgid "Nelson Ogie"
+msgstr ""
+
+#: mainapp/templates/home.html:518 mainapp/translations.py:65
+msgid "Public Relations"
+msgstr ""
+
+#: mainapp/templates/home.html:519 mainapp/translations.py:66
+msgid "Verantwortlich für Öffentlichkeitsarbeit und Medienkommunikation."
+msgstr ""
+
+#: mainapp/templates/home.html:529 mainapp/translations.py:67
+#, fuzzy
+#| msgid "Schülervertretung"
+msgid "Schülervertretungsarbeit"
+msgstr "Student Council"
+
+#: mainapp/templates/home.html:530 mainapp/translations.py:68
+msgid "Schülervertretung ist für uns ein Praxisfeld, kein Selbstzweck."
+msgstr ""
+
+#: mainapp/templates/home.html:534 mainapp/translations.py:69
+msgid "Wir arbeiten:"
+msgstr ""
+
+#: mainapp/templates/home.html:536 mainapp/translations.py:70
+msgid "unabhängig"
+msgstr ""
+
+#: mainapp/templates/home.html:537 mainapp/translations.py:71
+msgid "ohne Partei im Rücken"
+msgstr ""
+
+#: mainapp/templates/home.html:538 mainapp/translations.py:72
+msgid "ohne institutionelle Dachverbände"
+msgstr ""
+
+#: mainapp/templates/home.html:542 mainapp/translations.py:73
+msgid "Ziel ist nicht Repräsentation um ihrer selbst willen,"
+msgstr ""
+
+#: mainapp/templates/home.html:543 mainapp/translations.py:74
+msgid ""
+"sondern konkrete Verbesserungsvorschläge aus der Perspektive der Betroffenen."
+msgstr ""
+
+#: mainapp/templates/home.html:553 mainapp/translations.py:8
+msgid "Warum mitmachen?"
+msgstr ""
+
+#: mainapp/templates/home.html:554 mainapp/translations.py:75
+msgid ""
+"Sovereign Youth richtet sich an Menschen, die nicht nur reden, sondern bauen "
+"wollen."
+msgstr ""
+
+#: mainapp/templates/home.html:561 mainapp/translations.py:76
+#, fuzzy
+#| msgid "Mitglied werden"
+msgid "Für Mitglieder"
+msgstr "Become a Member"
+
+#: mainapp/templates/home.html:563 mainapp/translations.py:77
+msgid "reale Projektverantwortung"
+msgstr ""
+
+#: mainapp/templates/home.html:564 mainapp/translations.py:78
+msgid "echte Referenzen (Texte, Events, Formate)"
+msgstr ""
+
+#: mainapp/templates/home.html:565 mainapp/translations.py:79
+msgid "internes Forum als Arbeitsraum"
+msgstr ""
+
+#: mainapp/templates/home.html:566 mainapp/translations.py:80
+msgid "steile Lernkurve durch Umsetzung"
+msgstr ""
+
+#: mainapp/templates/home.html:573 mainapp/translations.py:81
+msgid "Für Leistungsträger"
+msgstr ""
+
+#: mainapp/templates/home.html:577 mainapp/translations.py:84
+msgid "langfristige Rolle im Thinktank-Kern"
+msgstr ""
+
+#: mainapp/templates/home.html:578 mainapp/translations.py:85
+msgid "Verantwortung statt Titel"
+msgstr ""
+
+#: mainapp/templates/home.html:585 mainapp/translations.py:86
+msgid "Mach mit"
+msgstr ""
+
+#: mainapp/templates/home.html:586 mainapp/translations.py:87
+msgid "Ob offen im Digital Coil oder als Mitglied –"
+msgstr ""
+
+#: mainapp/templates/home.html:589 mainapp/translations.py:88
+#, fuzzy
+#| msgid "Mitglied werden"
+msgid "Als Mitglied bewerben"
+msgstr "Become a Member"
+
+#: mainapp/templates/home.html:596 mainapp/templates/includes/footer.html:21
+#: mainapp/templates/includes/header.html:26 mainapp/templates/login.html:11
+msgid "Mitgliederbereich"
+msgstr "Member Area"
+
+#: mainapp/templates/home.html:609 mainapp/translations.py:89
+msgid "Unsere Partner"
+msgstr ""
+
+#: mainapp/templates/home.html:610 mainapp/translations.py:90
+msgid "Entdecke unsere Partner-Communities und Netzwerke"
+msgstr ""
+
+#: mainapp/templates/home.html:617 mainapp/translations.py:91
+msgid "The Fehlinger Doctrine! 🏛️"
+msgstr ""
+
+#: mainapp/templates/home.html:630 mainapp/translations.py:95
+msgid "Discord Server beitreten"
+msgstr ""
+
+#: mainapp/templates/includes/footer.html:6 mainapp/translations.py:96
+msgid ""
+"Empowering the next generation through education, community, and leadership "
+"development."
+msgstr ""
+
+#: mainapp/templates/includes/footer.html:7 mainapp/translations.py:97
+msgid "Contact:"
+msgstr ""
+
+#: mainapp/templates/includes/footer.html:8 mainapp/translations.py:98
+msgid "Phone: +436642358516"
+msgstr ""
+
+#: mainapp/templates/includes/footer.html:9 mainapp/translations.py:99
+msgid "Email: sovereignyouth@cyberenigma.dev"
+msgstr ""
+
+#: mainapp/templates/includes/footer.html:12
+msgid "Navigation"
+msgstr ""
+
+#: mainapp/templates/includes/footer.html:14
+#: mainapp/templates/includes/header.html:30
+msgid "Über uns"
+msgstr "About Us"
+
+#: mainapp/templates/includes/footer.html:15
+#: mainapp/templates/includes/header.html:31
+#: mainapp/templates/youth_org/sovereign_youth.html:33
+msgid "Programm"
+msgstr "Program"
+
+#: mainapp/templates/includes/footer.html:16 mainapp/translations.py:102
+#, fuzzy
+#| msgid "The Digital Coil"
+msgid "Digital Coil"
+msgstr "The Digital Coil"
+
+#: mainapp/templates/includes/footer.html:17
+#: mainapp/templates/includes/header.html:33
+#: mainapp/templates/youth_org/statutes.html:91
+msgid "Vorstand"
+msgstr "Board"
+
+#: mainapp/templates/includes/footer.html:18
+#: mainapp/templates/includes/header.html:34
+msgid "Schülervertretung"
+msgstr "Student Council"
+
+#: mainapp/templates/includes/footer.html:23
+#: mainapp/templates/includes/header.html:36 mainapp/translations.py:106
+msgid "Login"
+msgstr "Login"
+
+#: mainapp/templates/includes/footer.html:28 mainapp/translations.py:107
+msgid "Connect"
+msgstr ""
+
+#: mainapp/templates/includes/footer.html:31 mainapp/translations.py:108
+#, fuzzy
+#| msgid "The Digital Coil"
+msgid "Join The Digital Coil"
+msgstr "The Digital Coil"
+
+#: mainapp/templates/includes/footer.html:39
+msgid "Impressum"
+msgstr ""
+
+#: mainapp/templates/includes/footer.html:40
+msgid "Datenschutz"
+msgstr ""
+
+#: mainapp/templates/includes/header.html:25
+msgid "Startseite"
+msgstr "Home"
+
+#: mainapp/templates/includes/header.html:27
+msgid "Logout"
+msgstr "Logout"
+
+#: mainapp/templates/login.html:12
+msgid "Zugang zu internen Projekten und Tools"
+msgstr ""
+
+#: mainapp/templates/login.html:19
+msgid "Benutzername"
+msgstr ""
+
+#: mainapp/templates/login.html:27
+msgid "Passwort"
+msgstr ""
+
+#: mainapp/templates/login.html:28
+msgid "Passwort vergessen?"
+msgstr ""
+
+#: mainapp/templates/login.html:48
+msgid "Noch kein Mitglied?"
+msgstr ""
+
+#: mainapp/templates/login.html:48
+msgid "Zum Mitgliedsantrag"
+msgstr ""
+
+#: mainapp/templates/member.html:151
+#, fuzzy
+#| msgid "Mitgliederbereich"
+msgid "Mitgliederforum"
+msgstr "Member Area"
+
+#: mainapp/templates/member.html:152
+msgid "Beta"
+msgstr ""
+
+#: mainapp/templates/member.html:153
+msgid "Interner Austausch für Mitglieder von Sovereign Youth"
+msgstr ""
+
+#: mainapp/templates/member.html:172
+msgid "Noch keine Nachrichten im Channel."
+msgstr ""
+
+#: mainapp/templates/member.html:179
+msgid "Senden"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:20
+msgid "Personal Information"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:25
+msgid "Organization *"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:35
+msgid "Date of Birth *"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:44
+msgid "Gender *"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:53
+msgid "Phone Number"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:63
+msgid "Address *"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:73
+msgid "City *"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:82
+msgid "Postal Code *"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:91
+msgid "Country *"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:102
+msgid "School"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:111
+msgid "Grade (1-13)"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:123
+msgid "Parent/Guardian Information"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:127
+msgid "Parent/Guardian Name *"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:136
+msgid "Parent/Guardian Phone *"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:145
+msgid "Parent/Guardian Email *"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:157
+msgid "Emergency Contact"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:161
+msgid "Contact Name *"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:170
+msgid "Contact Phone *"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:179
+msgid "Relation *"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:194
+msgid "Skills/Interests"
+msgstr ""
+
+#: mainapp/templates/youth_org/member_form.html:203
+msgid "Additional Notes"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:36
+msgid "Join Organization"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:40
+msgid "Member"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:45
+msgid "Login to Join"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:51
+msgid "Edit"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:59
+msgid "Organization Stats"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:62
+msgid "Total Members:"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:66
+msgid "Status:"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:72
+msgid "Founded:"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:79
+msgid "Upcoming Events"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:82
+msgid "Cybersecurity Workshop"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:84
+msgid "June 15, 2023"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:88
+msgid "CTF Competition"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:90
+msgid "July 1, 2023"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:103
+msgid "Admin Actions"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:106
+msgid "Admin Panel"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:110
+msgid "Deactivate"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_detail.html:114
+msgid "Activate"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_list.html:5
+msgid "Available Youth Organizations"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_list.html:6
+msgid ""
+"Browse and join one of our youth organizations to get started with "
+"cybersecurity training and activities."
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_list.html:38
+msgid "No youth organizations are currently available."
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_list.html:52
+msgid "Previous"
+msgstr ""
+
+#: mainapp/templates/youth_org/organization_list.html:60
+msgid "Next"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:11
+msgid "Grundsatzprogramm"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:12
+msgid ""
+"Eine Generation zwischen Freiheit, Verantwortung und digitaler Souveränität"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:73
+msgid "1. Unsere Vision"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:74
+msgid ""
+"Wir glauben an eine Jugend, die Verantwortung übernimmt – für sich selbst, "
+"für andere und für die Zukunft."
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:75
+msgid ""
+"„The Sovereign Youth“ ist die starke Stimme der Schülerinnen und Schüler in "
+"den Bundesschülervertretungen (BSV) und Landesschülervertretungen (LSV) in "
+"Österreich und Deutschland. Wir setzen uns ein für eine Bildungspolitik, die "
+"Freiheit, Leistung und Eigenverantwortung in den Mittelpunkt stellt."
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:76
+msgid ""
+"Wir stehen für eine Generation, die sich nicht treiben lässt – sondern führt."
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:82
+msgid "2. Unser Selbstverständnis"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:83
+msgid ""
+"Wir sind die Interessensvertretung engagierter Schülerinnen und Schüler, die "
+"ihre Schulen aktiv mitgestalten wollen. Als Teil der Schülervertretungen "
+"kämpfen wir für bessere Bildungschancen und eine starke Stimme der Jugend in "
+"der Bildungspolitik."
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:85
+msgid "Unser Fundament:"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:87
+msgid "Bildungsfreiheit"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:87
+msgid "statt Einheitsbrei"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:88
+msgid "Leistung"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:88
+msgid "statt Gleichmacherei"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:89
+msgid "Eigenverantwortung"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:89
+msgid "statt Bevormundung"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:90
+msgid "Demokratie"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:90
+msgid "in der Schule stärken"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:97
+msgid "3. Unsere Ziele in den Schülervertretungen"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:99
+msgid "📚 Bessere Bildung"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:101
+msgid "Für ein leistungsorientiertes Schulsystem mit klaren Standards"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:102
+msgid "Mehr Praxisbezug und digitale Kompetenzen im Unterricht"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:103
+msgid ""
+"Stärkung der MINT-Fächer (Mathematik, Informatik, Naturwissenschaften, "
+"Technik)"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:104
+msgid "Förderung von Sprachtalenten und kultureller Bildung"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:107
+msgid "💡 Mitbestimmung stärken"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:109
+msgid "Mehr Mitspracherecht für Schülerinnen und Schüler"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:110
+msgid "Stärkung der demokratischen Strukturen in den BSV und LSV"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:111
+msgid "Transparente Entscheidungsprozesse in der Schulpolitik"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:112
+msgid "Bessere Ausstattung der Schülervertretungen"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:115
+msgid "🚀 Zukunftskompetenzen fördern"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:117
+msgid "Digitale Bildung für alle Schülerinnen und Schüler"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:118
+msgid "Unternehmerisches Denken im Schulalltag verankern"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:119
+msgid "Medienkompetenz und kritisches Denken stärken"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:120
+msgid "Berufsorientierung und Praxiserfahrung ausbauen"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:127
+msgid "4. Unsere Forderungen an die Bildungspolitik"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:129
+msgid "🔹 Schulqualität verbessern"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:131
+msgid "Leistungsförderung statt Nivellierung nach unten"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:132
+msgid "Mehr Eigenverantwortung für Schulen"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:133
+msgid "Bessere Aus- und Weiterbildung für Lehrkräfte"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:134
+msgid "Moderne Ausstattung aller Schulen"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:137
+msgid "🔹 Vielfalt ermöglichen"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:139
+msgid "Wahlfreiheit zwischen Schulformen erhalten"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:140
+msgid "Begabtenförderung ausbauen"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:141
+msgid "Individuelle Lernwege ermöglichen"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:142
+msgid "Inklusion bedarfsgerecht umsetzen"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:145
+msgid "🔹 Digitalisierung gestalten"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:147
+msgid "Flächendeckender Ausbau der digitalen Infrastruktur"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:148
+msgid "Digitale Endgeräte für alle Schülerinnen und Schüler"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:149
+msgid "Datenschutz und digitale Souveränität stärken"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:150
+msgid "Open Educational Resources fördern"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:157
+msgid "5. Unser Engagement in den BSV und LSV"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:158
+msgid ""
+"Als aktive Mitglieder in den Schülervertretungen setzen wir uns ein für:"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:160
+msgid "Eine starke Vertretung der Schülerinteressen auf allen Ebenen"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:161
+msgid "Transparente und demokratische Entscheidungsprozesse"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:162
+msgid "Eine sachliche und lösungsorientierte Bildungspolitik"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:163
+msgid "Die Vernetzung engagierter Schülerinnen und Schüler"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:164
+msgid "Die Weiterentwicklung der Schülervertretungsarbeit"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:171
+msgid "6. Unsere Vision für die Schule von morgen"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:172
+msgid "Wir träumen von Schulen, die..."
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:174
+msgid "...junge Menschen zu mündigen Bürgern erziehen"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:175
+msgid "...Leistung fordern und fördern"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:176
+msgid "...digitale Kompetenzen vermitteln"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:177
+msgid "...demokratische Werte leben"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:178
+msgid "...auf die Herausforderungen der Zukunft vorbereiten"
+msgstr ""
+
+#: mainapp/templates/youth_org/programm.html:182
+msgid ""
+"Gemeinsam gestalten wir die Bildung von morgen – für eine starke und freie "
+"Jugend!"
+msgstr ""
+
+#: mainapp/templates/youth_org/sovereign_youth.html:13
+msgid "The Sovereign Youth"
+msgstr ""
+
+#: mainapp/templates/youth_org/sovereign_youth.html:14
+msgid "Selbstständig. Glaubwürdig. Zukunftsbewusst."
+msgstr ""
+
+#: mainapp/templates/youth_org/sovereign_youth.html:22
+#: mainapp/templates/youth_org/statutes.html:11
+msgid "Statuten"
+msgstr ""
+
+#: mainapp/templates/youth_org/sovereign_youth.html:37
+msgid "Das Grundsatzprogramm von „The Sovereign Youth“ wird hier vorgestellt."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:12
+msgid "des Vereins „The Sovereign Youth“"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:38
+msgid "§1 Name, Sitz und Tätigkeitsbereich"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:40
+msgid "Der Verein führt den Namen „The Sovereign Youth“."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:41
+msgid ""
+"Er hat seinen Sitz in Salzburg und erstreckt seine Tätigkeit auf ganz "
+"Österreich und Europa."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:42
+msgid "Die Errichtung von Zweigvereinen und lokalen Gruppen ist vorgesehen."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:45
+msgid "§2 Zweck des Vereins"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:47
+msgid ""
+"Der Verein ist nicht auf Gewinn gerichtet und verfolgt ausschließlich "
+"gemeinnützige Zwecke."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:48
+msgid ""
+"Ziel ist die Förderung einer wertebasierten Jugendkultur auf Grundlage von "
+"geistiger Freiheit, Eigenverantwortung und europäischer Kultur."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:49
+msgid "Der Verein ist überparteilich und unabhängig."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:50
+msgid "Die Tätigkeit gliedert sich in zwei klar getrennte Bereiche:"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:52
+msgid "Sovereign Students – schulpolitisch und gesellschaftlich aktiv"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:53
+msgid "The Digital Coil – bildungs- und technikorientiertes Lernprojekt"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:58
+msgid "§3 Mittel zur Erreichung des Vereinszwecks"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:59
+msgid "Die Ziele werden verwirklicht durch:"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:61
+msgid "Veranstaltungen, Workshops, Seminare und Diskussionen"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:62
+msgid "Online-Formate, Lernzirkel, Publikationen"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:63
+msgid "Öffentlichkeitsarbeit und Kampagnen"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:64
+msgid "Aufbau eines Netzwerks junger engagierter Menschen"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:65
+msgid "Zusammenarbeit mit Schulen, Organisationen und freien Initiativen"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:68
+msgid "§4 Mitgliedschaft"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:70
+msgid "Mitglied kann jede natürliche Person werden, die die Ziele unterstützt."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:71
+#, fuzzy
+#| msgid "Mitglied werden"
+msgid "Mitgliedsarten:"
+msgstr "Become a Member"
+
+#: mainapp/templates/youth_org/statutes.html:73
+msgid "Aktivmitglieder (14–35 Jahre)"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:74
+msgid "Fördermitglieder (ab 36 Jahren oder unterstützend)"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:75
+msgid "Ehrenmitglieder (auf Vorschlag durch die Generalversammlung)"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:78
+msgid ""
+"Voraussetzung: Zustimmung zu den Grundwerten (Demokratie, Menschenwürde, "
+"geistige Freiheit, Eigenverantwortung)."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:81
+msgid "§5 Rechte und Pflichten der Mitglieder"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:83
+msgid "Teilnahme an Vereinsaktivitäten."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:84
+msgid "Aktivmitglieder besitzen Stimmrecht in der Generalversammlung."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:85
+msgid ""
+"Mitglieder verpflichten sich zur Einhaltung der Statuten und Unterstützung "
+"des Vereinszwecks."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:88
+msgid "§6 Organe des Vereins"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:90
+msgid "Generalversammlung"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:92
+msgid "Rechnungsprüfer:innen"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:93
+msgid "Bereichsleitungen (optional)"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:96
+msgid "§7 Generalversammlung"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:98
+msgid "Höchstes Organ, mind. einmal jährlich."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:99
+msgid "Zuständig für:"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:101
+msgid "Wahl/Entlastung des Vorstands"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:102
+msgid "Statutenänderungen"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:103
+msgid "Grundsatzentscheidungen"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:104
+msgid "Auflösung"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:109
+#, fuzzy
+#| msgid "Vorstand"
+msgid "§8 Vorstand"
+msgstr "Board"
+
+#: mainapp/templates/youth_org/statutes.html:111
+msgid "Besteht aus mindestens drei Personen:"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:113
+msgid "Obmann/Obfrau"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:114
+msgid "Kassier:in"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:115
+msgid "Schriftführer:in"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:116
+msgid "(Optional: Stellvertretung für Obmann/Obfrau)"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:119
+msgid "Führt laufende Geschäfte, vertritt den Verein nach außen."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:120
+msgid "Funktionsperiode: zwei Jahre, Wiederwahl möglich."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:123
+msgid "§9 Rechnungsprüfer:innen"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:125
+msgid "Zwei Personen, gewählt von der Generalversammlung für zwei Jahre."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:126
+msgid "Prüfen Finanzen, berichten der Generalversammlung."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:129
+msgid "§10 Auflösung des Vereins"
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:131
+msgid ""
+"Nur mit Zweidrittelmehrheit in einer eigens einberufenen Generalversammlung."
+msgstr ""
+
+#: mainapp/templates/youth_org/statutes.html:132
+msgid ""
+"Vereinsvermögen fällt an eine gemeinnützige Organisation mit ähnlichem Zweck."
+msgstr ""
+
+#: mainapp/translations.py:27
+msgid "Workshops & Formate zu:"
+msgstr ""
+
+#: mainapp/translations.py:29
+msgid "Cybersecurity & IT"
+msgstr ""
+
+#: mainapp/translations.py:30
+msgid "Development & Programmieren"
+msgstr ""
+
+#: mainapp/translations.py:32
+msgid "gesellschaftlichen & ökonomischen Grundlagen"
+msgstr ""
+
+#: mainapp/translations.py:35
+msgid "Lernen & Prüfungen"
+msgstr ""
+
+#: mainapp/translations.py:36
+msgid "Ausbildungs- & Jobwahl"
+msgstr ""
+
+#: mainapp/translations.py:38
+msgid "Projekten & Skills"
+msgstr ""
+
+#: mainapp/translations.py:42
+msgid "The Digital Coil – offenes Projekt- & Praxisformat"
+msgstr ""
+
+#: mainapp/translations.py:62
+msgid "Verantwortlich für die organisatorischen Abläufe."
+msgstr ""
+
+#: mainapp/translations.py:82
+msgid "Mitgestaltung von Strategie & Ausrichtung"
+msgstr ""
+
+#: mainapp/translations.py:83
+msgid "Leitung von Projekten & Bereichen"
+msgstr ""
+
+#: mainapp/translations.py:92
+msgid ""
+"Come join Austrian SME Economist and political commentator Günther Fehlinger-"
+"Jahn on his quest to decolonise the world and make it safe for Democracy!"
+msgstr ""
+
+#: mainapp/translations.py:93
+msgid ""
+"Host of a highly informative podcast and star of the Hearts of Iron IV Mod "
+"\"The Fire Rises\", Gunther needs your help to change the world."
+msgstr ""
+
+#: mainapp/translations.py:94
+msgid ""
+"With a fast growing community, regular livestreams, and a Q&A from Gunther "
+"himself, what are you waiting for? Join our server!"
+msgstr ""
+
+#: mainapp/translations.py:100
+msgid "About Us"
+msgstr ""
+
+#: mainapp/translations.py:101
+#, fuzzy
+#| msgid "Programm"
+msgid "Program"
+msgstr "Program"
+
+#: mainapp/translations.py:103
+msgid "Board"
+msgstr ""
+
+#: mainapp/translations.py:104
+msgid "Student Council"
+msgstr ""
+
+#: mainapp/translations.py:105
+msgid "Become a Member"
+msgstr ""
+
+#: mainapp/translations.py:109
+msgid "© 2025 Sovereign Youth. All rights reserved."
+msgstr ""
+
+#: mainapp/translations.py:110
+msgid "Legal Notice"
+msgstr ""
+
+#: mainapp/translations.py:111
+msgid "Privacy Policy"
+msgstr ""

@@ -1,4 +1,6 @@
 {% load static %}
+{% load i18n %}
+{% load i18n %}
 <header class="header">
     <!-- Organization Banner -->
     
@@ -6,8 +8,8 @@
     <nav class="navbar">
         <div class="logo-container">
             <a href="/" class="logo-link">
-                <img src="{% static 'logo.png' %}" alt="Sovereign Youth Logo" class="nav-logo">
-                <span class="logo-text">SovereignYouth</span>
+                <img src="{% static 'coil.JPG' %}" alt="Sovereign Youth x DigitalCoil Logo" class="nav-logo">
+                <span class="logo-text">SovereignYouth x DigitalCoil</span>
             </a>
         </div>
         
@@ -18,21 +20,30 @@
         </div>
         
         <ul class="nav-links">
-            {% if user.is_authenticated %}
+                        {% if user.is_authenticated %}
                 <!-- Navigation for logged-in users -->
-                <li><a href="/" class="nav-link">Startseite</a></li>
-                <li><a href="{% url 'member' %}" class="nav-link">Mitgliederbereich</a></li>
-                <li><a href="{% url 'logout' %}" class="nav-link">Logout</a></li>
+                <li><a href="/" class="nav-link">{% trans 'Startseite' %}</a></li>
+                <li><a href="{% url 'member' %}" class="nav-link">{% trans 'Mitgliederbereich' %}</a></li>
+                <li><a href="{% url 'logout' %}" class="nav-link">{% trans 'Logout' %}</a></li>
             {% else %}
                 <!-- Navigation for non-logged-in users -->
-                <li><a href="#wer-wir-sind" class="nav-link scroll-link">Über uns</a></li>
-                <li><a href="#programm" class="nav-link scroll-link">Programm</a></li>
-                <li><a href="#digital-coil" class="nav-link scroll-link">The Digital Coil</a></li>
-                <li><a href="#vorstand" class="nav-link scroll-link">Vorstand</a></li>
-                <li><a href="#schuelervertretung" class="nav-link scroll-link">Schülervertretung</a></li>
-                <li><a href="#mitglied-werden" class="nav-link cta-button">Mitglied werden</a></li>
-                <li><a href="{% url 'login' %}" class="nav-link">Login</a></li>
+                <li><a href="#wer-wir-sind" class="nav-link scroll-link">{% trans 'Über uns' %}</a></li>
+                <li><a href="#programm" class="nav-link scroll-link">{% trans 'Programm' %}</a></li>
+                <li><a href="#digital-coil" class="nav-link scroll-link">{% trans 'The Digital Coil' %}</a></li>
+                <li><a href="#vorstand" class="nav-link scroll-link">{% trans 'Vorstand' %}</a></li>
+                <li><a href="#schuelervertretung" class="nav-link scroll-link">{% trans 'Schülervertretung' %}</a></li>
+                <li><a href="#mitglied-werden" class="nav-link cta-button">{% trans 'Mitglied werden' %}</a></li>
+                <li><a href="{% url 'login' %}" class="nav-link">{% trans 'Login' %}</a></li>
             {% endif %}
+            <li class="language-switcher">
+                <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ request.get_full_path }}" />
+                    <button type="submit" name="language" value="de" class="language-btn {% if LANGUAGE_CODE == 'de' or LANGUAGE_CODE == 'de-de' %}active{% endif %}" {% if LANGUAGE_CODE == 'de' or LANGUAGE_CODE == 'de-de' %}disabled{% endif %}>DE</button>
+                    <span>|</span>
+                    <button type="submit" name="language" value="en" class="language-btn {% if LANGUAGE_CODE == 'en' or LANGUAGE_CODE == 'en-us' or LANGUAGE_CODE == 'en-gb' %}active{% endif %}" {% if LANGUAGE_CODE == 'en' or LANGUAGE_CODE == 'en-us' or LANGUAGE_CODE == 'en-gb' %}disabled{% endif %}>EN</button>
+                </form>
+            </li>
         </ul>
     </nav>
 </header>
@@ -61,6 +72,55 @@ function showModal(type) {
 </script>
 
 <style>
+    /* Language Switcher */
+    .language-switcher {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+    }
+    
+    .language-switcher form {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .language-btn {
+        background: none;
+        border: none;
+        color: #e6e6e6;
+        cursor: pointer;
+        padding: 5px 8px;
+        font-size: 0.9em;
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+        font-family: inherit;
+    }
+    
+    .language-btn:hover {
+        opacity: 1;
+    }
+    
+    .language-btn.active {
+        opacity: 1;
+        font-weight: 600;
+        color: #e94560;
+    }
+    
+    .language-switcher span {
+        color: #666;
+        margin: 0 2px;
+    }
+    
+    @media (max-width: 768px) {
+        .language-switcher {
+            margin: 10px 0 0 0;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+    
     /* Organization Banner */
     .org-banner {
         text-align: center;

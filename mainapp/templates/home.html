@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block extra_head %}
@@ -338,16 +339,16 @@
 <section class="hero" id="home">
     <div class="container">
         <div class="hero-content">
-            <img src="{% static 'logo.png' %}" alt="Sovereign Youth Logo" class="main-logo">
-            <h1>Sovereign Youth</h1>
-            <p>Eine Schüler- und Jugendorganisation für Leistung, Verantwortung und souveränes Denken.</p>
-            <p>Wir arbeiten daran, Bildung besser zu machen, Leistung zu steigern und junge Menschen früh in Verantwortung zu bringen – durch Projekte, nicht durch Aktivismus.</p>
+            <img src="{% static 'coil.JPG' %}" alt="Sovereign Youth x DigitalCoil Logo" class="main-logo">
+            <h1>{% trans 'Sovereign Youth x DigitalCoil' %}</h1>
+            <p>{% trans 'Eine Schüler- und Jugendorganisation für Leistung, Verantwortung und souveränes Denken.' %}</p>
+            <p>{% trans 'Wir arbeiten daran, Bildung besser zu machen, Leistung zu steigern und junge Menschen früh in Verantwortung zu bringen – durch Projekte, nicht durch Aktivismus.' %}</p>
             <div class="cta-buttons">
                 <a href="#mitglied-werden" class="btn btn-primary">
-                    <i class="fas fa-users"></i> Mitglied werden
+                    <i class="fas fa-users"></i>{% trans 'Mitglied werden' %}
                 </a>
                 <a href="#digital-coil" class="btn btn-secondary">
-                    <i class="fab fa-discord"></i> The Digital Coil
+                    <i class="fab fa-discord"></i>{% trans 'The Digital Coil' %}
                 </a>
             </div>
         </div>
@@ -358,29 +359,29 @@
 <section id="wer-wir-sind">
     <div class="container">
         <div class="section-header">
-            <h2>Was wir tun</h2>
-            <p>Sovereign Youth verbindet Bildung, Leistung und praktische Umsetzung.</p>
+            <h2>{% trans 'Was wir tun' %}</h2>
+            <p>{% trans 'Sovereign Youth verbindet Bildung, Leistung und praktische Umsetzung.' %}</p>
         </div>
         <div class="two-column">
             <div>
-                <h3>Wir bringen junge Menschen zusammen, die:</h3>
+                <h3>{% trans 'Wir bringen junge Menschen zusammen, die:' %}</h3>
                 <ul>
-                    <li>eigenständig denken</li>
-                    <li>Verantwortung übernehmen</li>
-                    <li>und an realen Problemen arbeiten wollen</li>
+                    <li>{% trans 'eigenständig denken' %}</li>
+                    <li>{% trans 'Verantwortung übernehmen' %}</li>
+                    <li>{% trans 'und an realen Problemen arbeiten wollen' %}</li>
                 </ul>
-                <p>Statt leerer Diskussionen setzen wir auf konkrete Projekte, Wissensaufbau und Zusammenarbeit auf Augenhöhe.</p>
+                <p>{% trans 'Statt leerer Diskussionen setzen wir auf konkrete Projekte, Wissensaufbau und Zusammenarbeit auf Augenhöhe.' %}</p>
             </div>
             <div>
-                <h3>Warum das wichtig ist</h3>
-                <p>Schule und formale Bildung vermitteln Inhalte – aber kaum Orientierung, Verantwortung oder praktische Fähigkeiten.</p>
-                <p>Wir schließen diese Lücke:</p>
+                <h3>{% trans 'Warum das wichtig ist' %}</h3>
+                <p>{% trans 'Schule und formale Bildung vermitteln Inhalte – aber kaum Orientierung, Verantwortung oder praktische Fähigkeiten.' %}</p>
+                <p>{% trans 'Wir schließen diese Lücke:' %}</p>
                 <ul>
-                    <li>durch anwendungsnahe Bildung</li>
-                    <li>durch leistungsorientierte Zusammenarbeit</li>
-                    <li>durch ein Umfeld, das Eigeninitiative belohnt</li>
+                    <li>{% trans 'durch anwendungsnahe Bildung' %}</li>
+                    <li>{% trans 'durch leistungsorientierte Zusammenarbeit' %}</li>
+                    <li>{% trans 'durch ein Umfeld, das Eigeninitiative belohnt' %}</li>
                 </ul>
-                <p><strong>Leistung steigern</strong> heißt für uns: besser denken, besser lernen, besser handeln.</p>
+                <p><strong>{% trans 'Leistung steigern' %}</strong>{% trans 'heißt für uns: besser denken, besser lernen, besser handeln.' %}</p>
             </div>
         </div>
     </div>
@@ -390,21 +391,21 @@
 <section id="programm">
     <div class="container">
         <div class="section-header">
-            <h2>Was das konkret heißt</h2>
-            <p>Wie wir organisiert sind</p>
+            <h2>{% trans 'Was das konkret heißt' %}</h2>
+            <p>{% trans 'Wie wir organisiert sind' %}</p>
         </div>
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-graduation-cap"></i>
                 </div>
-                <h3>Bildung verbessern</h3>
+                <h3>{% trans 'Bildung verbessern' %}</h3>
                 <p>Workshops & Formate zu:</p>
                 <ul>
-                    <li>finanzieller Bildung</li>
+                    <li>{% trans 'finanzieller Bildung' %}</li>
                     <li>Cybersecurity & IT</li>
                     <li>Development & Programmieren</li>
-                    <li>künstlicher Intelligenz</li>
+                    <li>{% trans 'künstlicher Intelligenz' %}</li>
                     <li>gesellschaftlichen & ökonomischen Grundlagen</li>
                 </ul>
             </div>
@@ -412,29 +413,29 @@
                 <div class="feature-icon">
                     <i class="fas fa-rocket"></i>
                 </div>
-                <h3>Leistung steigern</h3>
-                <p>Netzwerk von ambitionierten Gleichgesinnten</p>
-                <p>gegenseitige Unterstützung bei:</p>
+                <h3>{% trans 'Leistung steigern' %}</h3>
+                <p>{% trans 'Netzwerk von ambitionierten Gleichgesinnten' %}</p>
+                <p>{% trans 'gegenseitige Unterstützung bei:' %}</p>
                 <ul>
                     <li>Lernen & Prüfungen</li>
                     <li>Ausbildungs- & Jobwahl</li>
-                    <li>Uni-Orientierung</li>
+                    <li>{% trans 'Uni-Orientierung' %}</li>
                     <li>Projekten & Skills</li>
                 </ul>
-                <p><strong>Kein Konsum. Mitarbeit.</strong></p>
+                <p><strong>{% trans 'Kein Konsum. Mitarbeit.' %}</strong></p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-sitemap"></i>
                 </div>
-                <h3>Wie wir organisiert sind</h3>
+                <h3>{% trans 'Wie wir organisiert sind' %}</h3>
                 <ul>
-                    <li>Sovereign Youth – die Organisation</li>
-                    <li>Thinktank (im Aufbau) – Analyse, Positionen, Konzepte</li>
+                    <li>{% trans 'Sovereign Youth – die Organisation' %}</li>
+                    <li>{% trans 'Thinktank (im Aufbau) – Analyse, Positionen, Konzepte' %}</li>
                     <li>The Digital Coil – offenes Projekt- & Praxisformat</li>
                 </ul>
-                <p>The Digital Coil ist offen.</p>
-                <p>Mitgliedschaft ist freiwillig, aber verantwortungsbasiert.</p>
+                <p>{% trans 'The Digital Coil ist offen.' %}</p>
+                <p>{% trans 'Mitgliedschaft ist freiwillig, aber verantwortungsbasiert.' %}</p>
             </div>
         </div>
     </div>
@@ -444,25 +445,25 @@
 <section id="digital-coil">
     <div class="container">
         <div class="section-header">
-            <h2>The Digital Coil</h2>
-            <p>Ein offener Raum für Projekte, Diskussion, Praxis und Lernen durch Machen</p>
+            <h2>{% trans 'The Digital Coil' %}</h2>
+            <p>{% trans 'Ein offener Raum für Projekte, Diskussion, Praxis und Lernen durch Machen' %}</p>
         </div>
         <div class="highlight-box">
-            <h3>Keine Mitgliedschaft nötig.</h3>
-            <h3>Kein Vorwissen nötig.</h3>
-            <p>Nur Bereitschaft, mitzudenken und mitzuarbeiten.</p>
+            <h3>{% trans 'Keine Mitgliedschaft nötig.' %}</h3>
+            <h3>{% trans 'Kein Vorwissen nötig.' %}</h3>
+            <p>{% trans 'Nur Bereitschaft, mitzudenken und mitzuarbeiten.' %}</p>
             <div style="margin-top: 2rem;">
-                <h4>Ein offener Raum für:</h4>
+                <h4>{% trans 'Ein offener Raum für:' %}</h4>
                 <ul>
-                    <li>Projekte</li>
-                    <li>Diskussion</li>
-                    <li>Praxis</li>
-                    <li>Lernen durch Machen</li>
+                    <li>{% trans 'Projekte' %}</li>
+                    <li>{% trans 'Diskussion' %}</li>
+                    <li>{% trans 'Praxis' %}</li>
+                    <li>{% trans 'Lernen durch Machen' %}</li>
                 </ul>
             </div>
             <div class="cta-buttons" style="margin-top: 2rem;">
                 <a href="https://discord.gg/gBercTcfzW" class="btn btn-secondary" target="_blank">
-                    <i class="fab fa-discord"></i> Jetzt teilnehmen
+                    <i class="fab fa-discord"></i>{% trans 'Jetzt teilnehmen' %}
                 </a>
             </div>
         </div>
@@ -473,49 +474,49 @@
 <section id="vorstand">
     <div class="container">
         <div class="section-header">
-            <h2>Unser Vorstand</h2>
-            <p>Die Menschen hinter Sovereign Youth</p>
+            <h2>{% trans 'Unser Vorstand' %}</h2>
+            <p>{% trans 'Die Menschen hinter Sovereign Youth' %}</p>
         </div>
         <div class="features-grid">
             <div class="feature-card">
                 <div class="member-image">
                     <img src="{% static 'IMG_5059.jpg' %}" alt="Terence Nwaeke">
                 </div>
-                <h3>Terence Nwaeke</h3>
-                <p style="color: #e94560; font-weight: 600;">Vorsitzender für IT und Social Media</p>
-                <p>Verantwortlich für die technische Infrastruktur und digitale Präsenz von Sovereign Youth.</p>
+                <h3>{% trans 'Terence Nwaeke' %}</h3>
+                <p style="color: #e94560; font-weight: 600;">{% trans 'Vorsitzender für IT und Social Media' %}</p>
+                <p>{% trans 'Verantwortlich für die technische Infrastruktur und digitale Präsenz von Sovereign Youth.' %}</p>
             </div>
             <div class="feature-card">
                 <div class="member-image">
-                    <img src="{% static 'IMG_5264.jpg' %}" alt="Flora Kohlbacher">
+                    <img src="{% static 'IMG_5323 2.jpg' %}" alt="Flora Kohlbacher">
                 </div>
-                <h3>Flora Kohlbacher</h3>
-                <p style="color: #e94560; font-weight: 600;">Vorsitzende für Mitgliederentwicklung</p>
-                <p>Verantwortlich für Kommunikation und Rekrutierung.</p>
+                <h3>{% trans 'Flora Kohlbacher' %}</h3>
+                <p style="color: #e94560; font-weight: 600;">{% trans 'Vorsitzende für Mitgliederentwicklung' %}</p>
+                <p>{% trans 'Verantwortlich für Kommunikation und Rekrutierung.' %}</p>
             </div>
             <div class="feature-card">
                 <div class="member-image">
                     <img src="{% static 'IMG_5061.jpg' %}" alt="Phillip Auber">
                 </div>
-                <h3>Phillip Auber</h3>
-                <p style="color: #e94560; font-weight: 600;">Stv. Vorsitzender für Organisation</p>
-                <p>Verantwortlich für die organisatorische Abläufe.</p>
+                <h3>{% trans 'Phillip Auber' %}</h3>
+                <p style="color: #e94560; font-weight: 600;">{% trans 'Stv. Vorsitzender für Organisation' %}</p>
+                <p>{% trans 'Verantwortlich für die organisatorische Abläufe.' %}</p>
             </div>
             <div class="feature-card">
                 <div class="member-image">
                     <img src="{% static 'IMG_5165.jpg' %}" alt="Gabriel">
                 </div>
-                <h3>Gabriel Hieß</h3>
-                <p style="color: #e94560; font-weight: 600;">Geschäftsführer</p>
-                <p>Verantwortlich für die strategische Führung und operative Leitung.</p>
+                <h3>{% trans 'Gabriel Hieß' %}</h3>
+                <p style="color: #e94560; font-weight: 600;">{% trans 'Geschäftsführer' %}</p>
+                <p>{% trans 'Verantwortlich für die strategische Führung und operative Leitung.' %}</p>
             </div>
             <div class="feature-card">
                 <div class="member-image">
                     <img src="{% static 'IMG_5166.jpg' %}" alt="Nelson Ogie">
                 </div>
-                <h3>Nelson Ogie</h3>
-                <p style="color: #e94560; font-weight: 600;">Public Relations</p>
-                <p>Verantwortlich für Öffentlichkeitsarbeit und Medienkommunikation.</p>
+                <h3>{% trans 'Nelson Ogie' %}</h3>
+                <p style="color: #e94560; font-weight: 600;">{% trans 'Public Relations' %}</p>
+                <p>{% trans 'Verantwortlich für Öffentlichkeitsarbeit und Medienkommunikation.' %}</p>
             </div>
         </div>
     </div>
@@ -525,21 +526,21 @@
 <section id="schuelervertretung">
     <div class="container">
         <div class="section-header">
-            <h2>Schülervertretungsarbeit</h2>
-            <p>Schülervertretung ist für uns ein Praxisfeld, kein Selbstzweck.</p>
+            <h2>{% trans 'Schülervertretungsarbeit' %}</h2>
+            <p>{% trans 'Schülervertretung ist für uns ein Praxisfeld, kein Selbstzweck.' %}</p>
         </div>
         <div class="two-column">
             <div>
-                <h3>Wir arbeiten:</h3>
+                <h3>{% trans 'Wir arbeiten:' %}</h3>
                 <ul>
-                    <li>unabhängig</li>
-                    <li>ohne Partei im Rücken</li>
-                    <li>ohne institutionelle Dachverbände</li>
+                    <li>{% trans 'unabhängig' %}</li>
+                    <li>{% trans 'ohne Partei im Rücken' %}</li>
+                    <li>{% trans 'ohne institutionelle Dachverbände' %}</li>
                 </ul>
             </div>
             <div>
-                <h3>Ziel ist nicht Repräsentation um ihrer selbst willen,</h3>
-                <p>sondern konkrete Verbesserungsvorschläge aus der Perspektive der Betroffenen.</p>
+                <h3>{% trans 'Ziel ist nicht Repräsentation um ihrer selbst willen,' %}</h3>
+                <p>{% trans 'sondern konkrete Verbesserungsvorschläge aus der Perspektive der Betroffenen.' %}</p>
             </div>
         </div>
     </div>
@@ -549,53 +550,85 @@
 <section id="mitglied-werden">
     <div class="container">
         <div class="section-header">
-            <h2>Warum mitmachen?</h2>
-            <p>Sovereign Youth richtet sich an Menschen, die nicht nur reden, sondern bauen wollen.</p>
+            <h2>{% trans 'Warum mitmachen?' %}</h2>
+            <p>{% trans 'Sovereign Youth richtet sich an Menschen, die nicht nur reden, sondern bauen wollen.' %}</p>
         </div>
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-users"></i>
                 </div>
-                <h3>Für Mitglieder</h3>
+                <h3>{% trans 'Für Mitglieder' %}</h3>
                 <ul>
-                    <li>reale Projektverantwortung</li>
-                    <li>echte Referenzen (Texte, Events, Formate)</li>
-                    <li>internes Forum als Arbeitsraum</li>
-                    <li>steile Lernkurve durch Umsetzung</li>
+                    <li>{% trans 'reale Projektverantwortung' %}</li>
+                    <li>{% trans 'echte Referenzen (Texte, Events, Formate)' %}</li>
+                    <li>{% trans 'internes Forum als Arbeitsraum' %}</li>
+                    <li>{% trans 'steile Lernkurve durch Umsetzung' %}</li>
                 </ul>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-star"></i>
                 </div>
-                <h3>Für Leistungsträger</h3>
+                <h3>{% trans 'Für Leistungsträger' %}</h3>
                 <ul>
                     <li>Mitgestaltung von Strategie & Ausrichtung</li>
                     <li>Leitung von Projekten & Bereichen</li>
-                    <li>langfristige Rolle im Thinktank-Kern</li>
-                    <li>Verantwortung statt Titel</li>
+                    <li>{% trans 'langfristige Rolle im Thinktank-Kern' %}</li>
+                    <li>{% trans 'Verantwortung statt Titel' %}</li>
                 </ul>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-rocket"></i>
                 </div>
-                <h3>Mach mit</h3>
-                <p>Ob offen im Digital Coil oder als Mitglied –</p>
+                <h3>{% trans 'Mach mit' %}</h3>
+                <p>{% trans 'Ob offen im Digital Coil oder als Mitglied –' %}</p>
                 <div class="cta-buttons" style="margin-top: 2rem;">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOqLdHDq-mtFJI_IoYd1sxyrkm43RqFleCAB7G8T1BsSmJHg/viewform?usp=dialog" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-user-plus"></i> Als Mitglied bewerben
+                        <i class="fas fa-user-plus"></i>{% trans 'Als Mitglied bewerben' %}
                     </a>
                     <a href="https://discord.gg/gBercTcfzW" class="btn btn-secondary" target="_blank">
-                        <i class="fab fa-discord"></i> Jetzt teilnehmen
+                        <i class="fab fa-discord"></i>{% trans 'Jetzt teilnehmen' %}
                     </a>
                     {% if user.is_authenticated %}
                         <a href="{% url 'member' %}" class="btn btn-primary">
-                            <i class="fas fa-users"></i> Mitgliederbereich
+                            <i class="fas fa-users"></i>{% trans 'Mitgliederbereich' %}
                         </a>
                     {% endif %}
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Partner Chapter Section -->
+<section id="partner-chapter" style="background-color: #1a1a2e;">
+    <div class="container">
+        <div class="section-header">
+            <h2>{% trans 'Unsere Partner' %}</h2>
+            <p>{% trans 'Entdecke unsere Partner-Communities und Netzwerke' %}</p>
+        </div>
+        <div class="feature-card" style="max-width: 600px; margin: 0 auto; text-align: center; overflow: hidden; padding: 0;">
+            <div style="width: 100%; height: 120px; overflow: hidden; border-radius: 8px 8px 0 0;">
+                <img src="{% static 'gunter.jpg' %}" alt="The Fehlinger Doctrine Banner" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 1.5rem;">
+                <h3>{% trans 'The Fehlinger Doctrine! 🏛️' %}</h3>
+                <div style="background: rgba(233, 69, 96, 0.1); padding: 1rem; border-radius: 8px; margin: 1.5rem 0;">
+                    <p style="margin: 0.5rem 0;">
+                        🐦‍🔥 Come join Austrian SME Economist and political commentator Günther Fehlinger-Jahn on his quest to decolonise the world and make it safe for Democracy! 🐦‍🔥
+                    </p>
+                    <p style="margin: 0.5rem 0;">
+                        🔥 Host of a highly informative podcast and star of the Hearts of Iron IV Mod "The Fire Rises", Gunther needs your help to change the world.
+                    </p>
+                    <p style="margin: 0.5rem 0 0 0;">
+                        🌐 With a fast growing community, regular livestreams, and a Q&A from Gunther himself, what are you waiting for? Join our server! 🌐
+                    </p>
+                </div>
+                <a href="https://discord.gg/Fm2htZX5hu" class="btn btn-secondary" target="_blank" style="margin-top: 1rem; background: #5865F2; border: none; padding: 0.6rem 1.5rem; font-weight: 600; letter-spacing: 0.5px; font-size: 0.9rem;">
+                    <i class="fab fa-discord"></i>{% trans 'Discord Server beitreten' %}
+                </a>
             </div>
         </div>
     </div>
