@@ -5,8 +5,8 @@
             <h3>{% trans 'Sovereign Youth' %}</h3>
             <p>{% trans 'Empowering the next generation through education, community, and leadership development.' %}</p>
             <p><strong>{% trans 'Contact:' %}</strong></p>
-            <p>{% trans 'Phone: +436642358516' %}</p>
-            <p>{% trans 'Email: sovereignyouth@cyberenigma.dev' %}</p>
+            <p>{% trans 'Phone' %}: +436642358516</p>
+            <p>{% trans 'Email' %}: sovereignyouth@cyberenigma.dev</p>
         </div>
         <div class="footer-section">
             <h3>{% trans 'Navigation' %}</h3>
@@ -34,10 +34,10 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2025 Sovereign Youth. All rights reserved.</p>
+        <p>&copy; 2025 {% trans 'Sovereign Youth' %}. {% trans 'All rights reserved.' %}</p>
         <div class="legal-links">
-            <a href="#" onclick="showModal('impressum')">{% trans 'Impressum' %}</a>
-            <a href="#" onclick="showModal('datenschutz')">{% trans 'Datenschutz' %}</a>
+            <a href="/impressum/">{% trans 'Impressum' %}</a>
+            <a href="#" onclick="showModal('datenschuz')">{% trans 'Datenschutz' %}</a>
         </div>
     </div>
 </footer>

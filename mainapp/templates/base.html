@@ -1,14 +1,15 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+{% load i18n %}
+<html lang="{{ request.LANGUAGE_CODE|default:'en' }}">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}CyberEnigma – The Digital Coil{% endblock %}</title>
-    <meta name="description" content="{% block description %}CyberEnigma is a global study circle focused on cybersecurity, OSINT, privacy, and ethical hacking. Beginners & Pros welcome.{% endblock %}">
-    <meta name="keywords" content="cybersecurity, ethical hacking, privacy, OSINT, infosec, cybersecurity community, learn hacking, cybersecurity education">
+    <title>{% block title %}{% trans 'CyberEnigma – The Digital Coil' %}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{% trans 'CyberEnigma is a global study circle focused on cybersecurity, OSINT, privacy, and ethical hacking. Beginners & Pros welcome.' %}{% endblock %}">
+    <meta name="keywords" content="{% trans 'cybersecurity, ethical hacking, privacy, OSINT, infosec, cybersecurity community, learn hacking, cybersecurity education' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="{% block og_title %}CyberEnigma – The Digital Coil{% endblock %}">
-    <meta property="og:description" content="{% block og_desc %}Join our global community of cybersecurity enthusiasts. Learn, share, and grow together.{% endblock %}">
+    <meta property="og:title" content="{% block og_title %}{% trans 'CyberEnigma – The Digital Coil' %}{% endblock %}">
+    <meta property="og:description" content="{% block og_desc %}{% trans 'Join our global community of cybersecurity enthusiasts. Learn, share, and grow together.' %}{% endblock %}">
     <meta property="og:image" content="{% static 'logo.png' %}">
     <meta property="og:url" content="{{ request.build_absolute_uri|default:'' }}">
     <meta name="twitter:card" content="summary_large_image">

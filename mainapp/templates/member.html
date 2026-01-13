@@ -2,7 +2,7 @@
 {% load i18n %}
 {% load static %}
 
-{% block title %}Mitgliederbereich | Sovereign Youth{% endblock %}
+{% block title %}{% trans 'Mitgliederbereich' %} | {% trans 'Sovereign Youth' %}{% endblock %}
 
 {% block extra_head %}
 <style>
@@ -175,7 +175,7 @@
     
     <form class="forum-form" method="post" style="display: flex; gap: 1rem;">
         {% csrf_token %}
-        <input type="text" name="content" placeholder="Nachricht schreiben..." autocomplete="off" required>
+        <input type="text" name="content" placeholder="{% trans 'Nachricht schreiben...' %}" autocomplete="off" required>
         <button type="submit">{% trans 'Senden' %}</button>
     </form>
 </div>

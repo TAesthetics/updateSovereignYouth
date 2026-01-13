@@ -184,3 +184,8 @@ def member(request):
         'channels': channels,
         'current_channel': channel,
     })
+
+
+def impressum(request):
+    """View for the legal notice (Impressum) page."""
+    return render(request, 'legal/impressum.html')

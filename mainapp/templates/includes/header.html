@@ -8,8 +8,8 @@
     <nav class="navbar">
         <div class="logo-container">
             <a href="/" class="logo-link">
-                <img src="{% static 'coil.JPG' %}" alt="Sovereign Youth x DigitalCoil Logo" class="nav-logo">
-                <span class="logo-text">SovereignYouth x DigitalCoil</span>
+                <img src="{% static 'coil.JPG' %}" alt="{% trans 'Sovereign Youth x DigitalCoil Logo' %}" class="nav-logo">
+                <span class="logo-text">{% trans 'SovereignYouth x DigitalCoil' %}</span>
             </a>
         </div>
         
@@ -36,13 +36,16 @@
                 <li><a href="{% url 'login' %}" class="nav-link">{% trans 'Login' %}</a></li>
             {% endif %}
             <li class="language-switcher">
-                <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+                <form action="{% url 'set_language' %}" method="post" id="language-form">
                     {% csrf_token %}
-                    <input name="next" type="hidden" value="{{ request.get_full_path }}" />
-                    <button type="submit" name="language" value="de" class="language-btn {% if LANGUAGE_CODE == 'de' or LANGUAGE_CODE == 'de-de' %}active{% endif %}" {% if LANGUAGE_CODE == 'de' or LANGUAGE_CODE == 'de-de' %}disabled{% endif %}>DE</button>
-                    <span>|</span>
-                    <button type="submit" name="language" value="en" class="language-btn {% if LANGUAGE_CODE == 'en' or LANGUAGE_CODE == 'en-us' or LANGUAGE_CODE == 'en-gb' %}active{% endif %}" {% if LANGUAGE_CODE == 'en' or LANGUAGE_CODE == 'en-us' or LANGUAGE_CODE == 'en-gb' %}disabled{% endif %}>EN</button>
+                    <input name="next" type="hidden" value="{{ request.get_full_path|default:'/' }}" />
+                    <input type="hidden" name="language" id="language-input" value="{{ LANGUAGE_CODE }}" />
                 </form>
+                <div class="language-buttons">
+                    <button type="button" onclick="switchLanguage('de')" class="language-btn {% if LANGUAGE_CODE|slice:':2' == 'de' %}active{% endif %}" {% if LANGUAGE_CODE|slice:':2' == 'de' %}disabled{% endif %}>DE</button>
+                    <span class="language-separator">|</span>
+                    <button type="button" onclick="switchLanguage('en')" class="language-btn {% if LANGUAGE_CODE|slice:':2' == 'en' %}active{% endif %}" {% if LANGUAGE_CODE|slice:':2' == 'en' %}disabled{% endif %}>EN</button>
+                </div>
             </li>
         </ul>
     </nav>
@@ -65,9 +68,43 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Language switcher functionality
+function switchLanguage(lang) {
+    const form = document.getElementById('language-form');
+    const input = document.getElementById('language-input');
+    const currentPath = '{{ request.path }}';
+    const currentLang = '{{ LANGUAGE_CODE|default:"de" }}';
+    
+    // Update the language input
+    input.value = lang;
+    
+    // Update the next URL to include the new language prefix
+    let nextUrl = form.querySelector('input[name="next"]').value;
+    
+    // If we're already on a language-prefixed URL, update the language code
+    if (currentPath.startsWith(`/${currentLang}/`)) {
+        nextUrl = nextUrl.replace(`/${currentLang}/`, `/${lang}/`);
+    } else if (currentPath === `/${currentLang}`) {
+        nextUrl = nextUrl.replace(`/${currentLang}`, `/${lang}`);
+    } else {
+        // If no language prefix, add it
+        nextUrl = `/${lang}${nextUrl}`;
+    }
+    
+    // Update the next URL in the form
+    form.querySelector('input[name="next"]').value = nextUrl;
+    
+    // Submit the form
+    form.submit();
+}
+
 // Modal functionality for Impressum/Datenschutz
 function showModal(type) {
-    alert(type === 'impressum' ? 'Impressum content here' : 'Datenschutz content here');
+    if (type === 'impressum') {
+        window.location.href = '/impressum/';
+    } else {
+        alert('Datenschutz content here');
+    }
 }
 </script>
 
@@ -79,11 +116,12 @@ function showModal(type) {
         margin-left: 15px;
     }
     
-    .language-switcher form {
+    .language-buttons {
         display: flex;
         align-items: center;
-        margin: 0;
-        padding: 0;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 2px;
     }
     
     .language-btn {
@@ -91,11 +129,32 @@ function showModal(type) {
         border: none;
         color: #e6e6e6;
         cursor: pointer;
-        padding: 5px 8px;
+        padding: 5px 12px;
         font-size: 0.9em;
-        opacity: 0.7;
-        transition: opacity 0.3s ease;
+        border-radius: 20px;
+        transition: all 0.3s ease;
         font-family: inherit;
+    }
+    
+    .language-btn:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .language-btn.active {
+        background: #e94560;
+        color: white;
+        opacity: 1;
+    }
+    
+    .language-btn:disabled {
+        cursor: not-allowed;
+        opacity: 1;
+    }
+    
+    .language-separator {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 0.9em;
+        margin: 0 2px;
     }
     
     .language-btn:hover {

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block extra_head %}
 <style>
@@ -83,22 +84,22 @@
 
 {% block content %}
 <div class="global-banner" style="background: #ffd700; color: #2c3e50; text-align: center; padding: 1rem 2rem; font-weight: 600; font-size: 1.1rem; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-    Interested in joining the board? Send an email to <a href="mailto:your@email.com" style="color: #2c3e50; text-decoration: underline; font-weight: bold;">your@email.com</a>
+    {% blocktrans %}Interested in joining the board? Send an email to{% endblocktrans %} <a href="mailto:your@email.com" style="color: #2c3e50; text-decoration: underline; font-weight: bold;">{% trans 'your@email.com' %}</a>
 </div>
 <div class="youth-org-container">
     <header class="youth-org-header">
-        <h1>Youth Organization Portal</h1>
-        <p>Empowering the next generation of cybersecurity professionals</p>
+        <h1>{% trans 'Youth Organization Portal' %}</h1>
+        <p>{% trans 'Empowering the next generation of cybersecurity professionals' %}</p>
     </header>
     
     <nav class="youth-org-nav">
         <ul>
-            <li><a href="{% url 'youth-organization-list' %}" {% if request.path == '/youth/' %}class="active"{% endif %}>Organizations</a></li>
+            <li><a href="{% url 'youth-organization-list' %}" {% if request.resolver_match.url_name == 'youth-organization-list' %}class="active"{% endif %}>{% trans 'Organizations' %}</a></li>
             {% if user.is_authenticated %}
-                <li><a href="{% url 'youth-dashboard' %}" {% if request.path == '/youth/join/' %}class="active"{% endif %}>My Dashboard</a></li>
-                <li><a href="{% url 'youth-statutes' %}">Statutes</a></li>
+                <li><a href="{% url 'youth-dashboard' %}" {% if request.resolver_match.url_name == 'youth-dashboard' %}class="active"{% endif %}>{% trans 'My Dashboard' %}</a></li>
+                <li><a href="{% url 'youth-statutes' %}">{% trans 'Statutes' %}</a></li>
                 {% if user.is_staff %}
-                    <li><a href="{% url 'youth-organization-create' %}">Add Organization</a></li>
+                    <li><a href="{% url 'youth-organization-create' %}">{% trans 'Add Organization' %}</a></li>
                 {% endif %}
             {% endif %}
         </ul>

@@ -28,4 +28,7 @@ urlpatterns = [
     # Member profile URLs
     path('youth/member/add/', YouthMemberCreateView.as_view(), name='youth-member-create'),
     path('youth/member/<int:pk>/edit/', YouthMemberUpdateView.as_view(), name='youth-member-update'),
+    
+    # Legal notice (Impressum)
+    path('impressum/', views.impressum, name='impressum'),
 ]
