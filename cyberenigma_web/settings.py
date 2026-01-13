@@ -18,15 +18,32 @@ DEBUG = True
 
 LOGIN_REDIRECT_URL = '/member/'
 
-# Configure allowed hosts for Railway and local development
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'sovereign-youth0-production.up.railway.app']
+# Configure allowed hosts for production and local development
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'cyberenigma.dev',
+    'www.cyberenigma.dev',
+    'sovereign-youth0-production.up.railway.app'
+]
 
+# Add your domain to CSRF trusted origins
+CSRF_TRUSTED_ORIGINS = [
+    'https://cyberenigma.dev',
+    'https://www.cyberenigma.dev',
+    'https://sovereign-youth0-production.up.railway.app'
+]
+
+# Handle Railway static URL if available
 RAILWAY_STATIC_URL = os.environ.get('RAILWAY_STATIC_URL')
 if RAILWAY_STATIC_URL:
     # The URL will be like 'https://my-app-production.up.railway.app'
     # We need to extract just the hostname.
     hostname = RAILWAY_STATIC_URL.split('//')[-1].split('/')[0]
-    ALLOWED_HOSTS.append(hostname)
+    if hostname not in ALLOWED_HOSTS:
+        ALLOWED_HOSTS.append(hostname)
+    if f'https://{hostname}' not in CSRF_TRUSTED_ORIGINS:
+        CSRF_TRUSTED_ORIGINS.append(f'https://{hostname}')
 
 # Application definition
 INSTALLED_APPS = [
