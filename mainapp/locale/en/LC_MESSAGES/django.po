@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 11:09+0100\n"
+"POT-Creation-Date: 2026-01-17 13:35+0100\n"
 "PO-Revision-Date: 2026-01-13 06:10+0100\n"
 "Last-Translator: Sovereign Youth Team <info@sovereign-youth.org>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -364,7 +364,7 @@ msgstr ""
 msgid "Unsere Partner"
 msgstr ""
 
-msgid "Entdecke unsere Partner-Communities und Netzwerke"
+msgid "Entdecke unsere Partner-Communities, Netzwerke und Firmen"
 msgstr ""
 
 msgid "The Fehlinger Doctrine Banner"
@@ -390,6 +390,9 @@ msgid ""
 msgstr ""
 
 msgid "Discord Server beitreten"
+msgstr ""
+
+msgid "Website besuchen"
 msgstr ""
 
 msgid "Impressum"
@@ -1129,6 +1132,9 @@ msgid "Mitgestaltung von Strategie & Ausrichtung"
 msgstr ""
 
 msgid "Leitung von Projekten & Bereichen"
+msgstr ""
+
+msgid "Entdecke unsere Partner-Communities und Netzwerke"
 msgstr ""
 
 msgid ""
