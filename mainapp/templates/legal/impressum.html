@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans 'Impressum' %} | Sovereign Youth{% endblock %}
+
+{% block content %}
+<div class="container" style="max-width: 800px; margin: 4rem auto; padding: 2rem; background: #1a1a2e; border-radius: 8px; color: #e6e6e6;">
+    <h1 style="color: #e94560; margin-bottom: 2rem; border-bottom: 1px solid #2a2a4e; padding-bottom: 0.5rem;">{% trans 'Impressum' %}</h1>
+    
+    <h3>Sovereign Youth</h3>
+    <p><strong>{% trans 'ZVR-Zahl' %}:</strong> 1169485986</p>
+    
+    <h4>{% trans 'Sitz des Vereins' %}</h4>
+    <p>Salzburg, Österreich</p>
+    
+    <h4>{% trans 'Vereinsadresse' %}</h4>
+    <p>Scherzhauserfeldstraße 40<br>
+    5020 Salzburg<br>
+    Österreich</p>
+    
+    <h4>{% trans 'Kontakt' %}</h4>
+    <p>E-Mail: <a href="mailto:sovereignyouth@cyberenigma.dev" style="color: #e94560;">sovereignyouth@cyberenigma.dev</a></p>
+    
+    <h4>{% trans 'Vereinszweck' %}</h4>
+    <p>{% trans 'Der Verein verfolgt das Ziel der Förderung von pro-europäischer Jugend- und Bildungsarbeit. Der Schwerpunkt liegt dabei auf der Entwicklung und Umsetzung von Projekten, die junge Menschen befähigen, Verantwortung zu übernehmen und aktiv an der Gestaltung der Gesellschaft mitzuwirken.' %}</p>
+    
+    <h4>{% trans 'Vertretungsberechtigtes Organ' %}</h4>
+    <p>{% trans 'Der Vorstand gemäß den Bestimmungen der Vereinsstatuten.' %}</p>
+    
+    <h4>{% trans 'Haftungsausschluss' %}</h4>
+    <p>{% trans 'Der Verein übernimmt keine Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen den Verein, die sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Vereins kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt.' %}</p>
+    
+    <h4>{% trans 'Externe Links' %}</h4>
+    <p>{% trans 'Diese Website enthält Verknüpfungen zu Websites Dritter (externe Links). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Verein hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Verein hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Verein die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist dem Verein ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.' %}</p>
+    
+    <p style="margin-top: 2rem; font-size: 0.9em; color: #b8b8b8;">
+        {% trans 'Stand: Januar 2025' %}
+    </p>
+    
+    <div style="margin-top: 3rem; text-align: center;">
+        <a href="{% url 'home' %}" class="btn btn-primary" style="display: inline-block; margin-top: 1rem;">
+            <i class="fas fa-arrow-left"></i> {% trans 'Zurück zur Startseite' %}
+        </a>
+    </div>
+</div>
+{% endblock %}

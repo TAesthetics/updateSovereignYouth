@@ -1,0 +1,1221 @@
+# English translations for Sovereign Youth
+# Copyright (C) 2026 Sovereign Youth
+# This file is distributed under the same license as the Sovereign Youth package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-04 18:42+0100\n"
+"PO-Revision-Date: 2026-01-13 06:10+0100\n"
+"Last-Translator: Sovereign Youth Team <info@sovereign-youth.org>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#| msgid "The Digital Coil"
+msgid "CyberEnigma – The Digital Coil"
+msgstr "The Digital Coil"
+
+msgid ""
+"CyberEnigma is a global study circle focused on cybersecurity, OSINT, "
+"privacy, and ethical hacking. Beginners & Pros welcome."
+msgstr ""
+
+msgid ""
+"cybersecurity, ethical hacking, privacy, OSINT, infosec, cybersecurity "
+"community, learn hacking, cybersecurity education"
+msgstr ""
+
+msgid ""
+"Join our global community of cybersecurity enthusiasts. Learn, share, and "
+"grow together."
+msgstr ""
+
+msgid "Startseite"
+msgstr "Home"
+
+msgid "Sovereign Youth"
+msgstr ""
+
+#, fuzzy
+#| msgid "The Digital Coil"
+msgid "Sovereign Youth x DigitalCoil Logo"
+msgstr "The Digital Coil"
+
+#, fuzzy
+#| msgid "The Digital Coil"
+msgid "Sovereign Youth x DigitalCoil"
+msgstr "The Digital Coil"
+
+msgid ""
+"Eine Schüler- und Jugendorganisation für Leistung, Verantwortung und "
+"souveränes Denken."
+msgstr ""
+
+msgid ""
+"Wir arbeiten daran, Bildung besser zu machen, Leistung zu steigern und junge "
+"Menschen früh in Verantwortung zu bringen – durch Projekte, nicht durch "
+"Aktivismus."
+msgstr ""
+
+msgid "Mitglied werden"
+msgstr "Become a Member"
+
+msgid "The Digital Coil"
+msgstr "The Digital Coil"
+
+msgid "Was wir tun"
+msgstr ""
+
+msgid "Sovereign Youth verbindet Bildung, Leistung und praktische Umsetzung."
+msgstr ""
+
+msgid "Wir bringen junge Menschen zusammen, die:"
+msgstr ""
+
+msgid "eigenständig denken"
+msgstr ""
+
+msgid "Verantwortung übernehmen"
+msgstr ""
+
+msgid "und an realen Problemen arbeiten wollen"
+msgstr ""
+
+msgid ""
+"Statt leerer Diskussionen setzen wir auf konkrete Projekte, Wissensaufbau "
+"und Zusammenarbeit auf Augenhöhe."
+msgstr ""
+
+msgid "Warum das wichtig ist"
+msgstr ""
+
+msgid ""
+"Schule und formale Bildung vermitteln Inhalte – aber kaum Orientierung, "
+"Verantwortung oder praktische Fähigkeiten."
+msgstr ""
+
+msgid "Wir schließen diese Lücke:"
+msgstr ""
+
+msgid "durch anwendungsnahe Bildung"
+msgstr ""
+
+msgid "durch leistungsorientierte Zusammenarbeit"
+msgstr ""
+
+msgid "durch ein Umfeld, das Eigeninitiative belohnt"
+msgstr ""
+
+msgid "Leistung steigern"
+msgstr ""
+
+msgid "heißt für uns: besser denken, besser lernen, besser handeln."
+msgstr ""
+
+msgid "Was das konkret heißt"
+msgstr ""
+
+msgid "Wie wir organisiert sind"
+msgstr ""
+
+msgid "Bildung verbessern"
+msgstr ""
+
+msgid "Workshops & Formate zu:"
+msgstr ""
+
+msgid "finanzieller Bildung"
+msgstr ""
+
+msgid "Cybersecurity & IT"
+msgstr ""
+
+msgid "Development & Programmieren"
+msgstr ""
+
+msgid "künstlicher Intelligenz"
+msgstr ""
+
+msgid "gesellschaftlichen & ökonomischen Grundlagen"
+msgstr ""
+
+msgid "Netzwerk von ambitionierten Gleichgesinnten"
+msgstr ""
+
+msgid "gegenseitige Unterstützung bei:"
+msgstr ""
+
+msgid "Lernen & Prüfungen"
+msgstr ""
+
+msgid "Ausbildungs- & Jobwahl"
+msgstr ""
+
+msgid "Uni-Orientierung"
+msgstr ""
+
+msgid "Projekten & Skills"
+msgstr ""
+
+msgid "Kein Konsum. Mitarbeit."
+msgstr ""
+
+msgid "Sovereign Youth – die Organisation"
+msgstr ""
+
+msgid "Thinktank (im Aufbau) – Analyse, Positionen, Konzepte"
+msgstr ""
+
+msgid "The Digital Coil – offenes Projekt- & Praxisformat"
+msgstr ""
+
+#, fuzzy
+#| msgid "The Digital Coil"
+msgid "The Digital Coil ist offen."
+msgstr "The Digital Coil"
+
+msgid "Mitgliedschaft ist freiwillig, aber verantwortungsbasiert."
+msgstr ""
+
+msgid ""
+"Ein offener Raum für Projekte, Diskussion, Praxis und Lernen durch Machen"
+msgstr ""
+
+msgid "Keine Mitgliedschaft nötig."
+msgstr ""
+
+msgid "Kein Vorwissen nötig."
+msgstr ""
+
+msgid "Nur Bereitschaft, mitzudenken und mitzuarbeiten."
+msgstr ""
+
+msgid "Ein offener Raum für:"
+msgstr ""
+
+msgid "Projekte"
+msgstr ""
+
+msgid "Diskussion"
+msgstr ""
+
+msgid "Praxis"
+msgstr ""
+
+msgid "Lernen durch Machen"
+msgstr ""
+
+msgid "Jetzt teilnehmen"
+msgstr ""
+
+#, fuzzy
+#| msgid "Vorstand"
+msgid "Unser Vorstand"
+msgstr "Board"
+
+msgid "Die Menschen hinter Sovereign Youth"
+msgstr ""
+
+msgid "Terence Nwaeke"
+msgstr ""
+
+msgid "Vorsitzender für IT und Social Media"
+msgstr ""
+
+msgid ""
+"Verantwortlich für die technische Infrastruktur und digitale Präsenz von "
+"Sovereign Youth."
+msgstr ""
+
+msgid "Flora Kohlbacher"
+msgstr ""
+
+msgid "Vorsitzende für Mitgliederentwicklung"
+msgstr ""
+
+msgid "Verantwortlich für Kommunikation und Rekrutierung."
+msgstr ""
+
+msgid "Phillip Auber"
+msgstr ""
+
+msgid "Stv. Vorsitzender für Organisation"
+msgstr ""
+
+msgid "Verantwortlich für die organisatorische Abläufe."
+msgstr ""
+
+msgid "Carl Friedrich"
+msgstr ""
+
+msgid "Geschäftsführer"
+msgstr ""
+
+msgid "Verantwortlich für die strategische Führung und operative Leitung."
+msgstr ""
+
+msgid "Schriftführer und Kreativ Workshop Leiter"
+msgstr ""
+
+msgid ""
+"Verantwortlich für die Protokollführung sowie die Leitung und Gestaltung "
+"kreativer Workshops."
+msgstr ""
+
+msgid "Funktionäre"
+msgstr ""
+
+msgid "AJ_Holzer"
+msgstr ""
+
+msgid "Cybersecurity Team"
+msgstr ""
+
+msgid ""
+"Verantwortlich für die digitale Sicherheit und Integrität unserer Systeme."
+msgstr ""
+
+msgid "Rollente"
+msgstr ""
+
+msgid "Leiter Cybersecurity Team"
+msgstr ""
+
+msgid "Abe Schmid"
+msgstr ""
+
+msgid "Sarah Horn"
+msgstr ""
+
+msgid "Rechnungsprüferin"
+msgstr ""
+
+msgid "Verantwortlich für die ordnungsgemäße Finanzprüfung und Transparenz."
+msgstr ""
+
+#, fuzzy
+#| msgid "Schülervertretung"
+msgid "Schülervertretungsarbeit"
+msgstr "Student Council"
+
+msgid "Schülervertretung ist für uns ein Praxisfeld, kein Selbstzweck."
+msgstr ""
+
+msgid "Wir arbeiten:"
+msgstr ""
+
+msgid "unabhängig"
+msgstr ""
+
+msgid "ohne Partei im Rücken"
+msgstr ""
+
+msgid "ohne institutionelle Dachverbände"
+msgstr ""
+
+msgid "Ziel ist nicht Repräsentation um ihrer selbst willen,"
+msgstr ""
+
+msgid ""
+"sondern konkrete Verbesserungsvorschläge aus der Perspektive der Betroffenen."
+msgstr ""
+
+msgid "Warum mitmachen?"
+msgstr ""
+
+msgid ""
+"Sovereign Youth richtet sich an Menschen, die nicht nur reden, sondern bauen "
+"wollen."
+msgstr ""
+
+#, fuzzy
+#| msgid "Mitglied werden"
+msgid "Für Mitglieder"
+msgstr "Become a Member"
+
+msgid "reale Projektverantwortung"
+msgstr ""
+
+msgid "echte Referenzen (Texte, Events, Formate)"
+msgstr ""
+
+msgid "internes Forum als Arbeitsraum"
+msgstr ""
+
+msgid "steile Lernkurve durch Umsetzung"
+msgstr ""
+
+msgid "Für Leistungsträger"
+msgstr ""
+
+msgid "langfristige Rolle im Thinktank-Kern"
+msgstr ""
+
+msgid "Verantwortung statt Titel"
+msgstr ""
+
+msgid "Mach mit"
+msgstr ""
+
+msgid "Ob offen im Digital Coil oder als Mitglied –"
+msgstr ""
+
+#, fuzzy
+#| msgid "Mitglied werden"
+msgid "Als Mitglied bewerben"
+msgstr "Become a Member"
+
+msgid "Mitgliederbereich"
+msgstr "Member Area"
+
+msgid "Fördermitgliedschaften & Partnerschaften"
+msgstr ""
+
+msgid ""
+"Unterstützen Sie unsere Arbeit durch eine Fördermitgliedschaft oder "
+"Partnerschaft."
+msgstr ""
+
+msgid "Förderantrag stellen"
+msgstr ""
+
+msgid "Englisch (PDF)"
+msgstr ""
+
+msgid "Deutsch (PDF)"
+msgstr ""
+
+msgid "Unsere Partner"
+msgstr ""
+
+msgid "Entdecke unsere Partner-Communities, Netzwerke und Firmen"
+msgstr ""
+
+msgid "The Fehlinger Doctrine Banner"
+msgstr ""
+
+msgid "The Fehlinger Doctrine! 🏛️"
+msgstr ""
+
+msgid ""
+"🐦‍🔥 Come join Austrian SME Economist and political commentator Günther "
+"Fehlinger-Jahn on his quest to decolonise the world and make it safe for "
+"Democracy! 🐦‍🔥"
+msgstr ""
+
+msgid ""
+"🔥 Host of a highly informative podcast and star of the Hearts of Iron IV "
+"Mod \"The Fire Rises\", Gunther needs your help to change the world."
+msgstr ""
+
+msgid ""
+"🌐 With a fast growing community, regular livestreams, and a Q&A from "
+"Gunther himself, what are you waiting for? Join our server! 🌐"
+msgstr ""
+
+msgid "Discord Server beitreten"
+msgstr ""
+
+msgid "Website besuchen"
+msgstr ""
+
+msgid "Impressum"
+msgstr ""
+
+msgid "Sitz des Vereins"
+msgstr ""
+
+msgid "Vereinsadresse"
+msgstr ""
+
+msgid "Kontakt"
+msgstr ""
+
+msgid "Vereinszweck"
+msgstr ""
+
+msgid ""
+"Der Verein verfolgt das Ziel der Förderung von pro-europäischer Jugend- und "
+"Bildungsarbeit. Der Schwerpunkt liegt dabei auf der Entwicklung und "
+"Umsetzung von Projekten, die junge Menschen befähigen, Verantwortung zu "
+"übernehmen und aktiv an der Gestaltung der Gesellschaft mitzuwirken."
+msgstr ""
+
+msgid "Vertretungsberechtigtes Organ"
+msgstr ""
+
+msgid "Der Vorstand gemäß den Bestimmungen der Vereinsstatuten."
+msgstr ""
+
+msgid "Haftungsausschluss"
+msgstr ""
+
+msgid ""
+"Der Verein übernimmt keine Gewähr für die Aktualität, Korrektheit, "
+"Vollständigkeit oder Qualität der bereitgestellten Informationen. "
+"Haftungsansprüche gegen den Verein, die sich auf Schäden materieller oder "
+"ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der "
+"dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und "
+"unvollständiger Informationen verursacht wurden, sind grundsätzlich "
+"ausgeschlossen, sofern seitens des Vereins kein nachweislich vorsätzliches "
+"oder grob fahrlässiges Verschulden vorliegt."
+msgstr ""
+
+msgid "Externe Links"
+msgstr ""
+
+msgid ""
+"Diese Website enthält Verknüpfungen zu Websites Dritter (externe Links). "
+"Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Verein "
+"hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte "
+"daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt "
+"waren keine Rechtsverstöße ersichtlich. Der Verein hat keinerlei Einfluss "
+"auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der "
+"verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich "
+"der Verein die hinter dem Verweis oder Link liegenden Inhalte zu Eigen "
+"macht. Eine ständige Kontrolle der externen Links ist dem Verein ohne "
+"konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von "
+"Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht."
+msgstr ""
+
+msgid "Stand: Januar 2025"
+msgstr ""
+
+msgid ""
+"Empowering the next generation through education, community, and leadership "
+"development."
+msgstr ""
+
+msgid "Contact:"
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Navigation"
+msgstr ""
+
+msgid "Über uns"
+msgstr "About Us"
+
+msgid "Programm"
+msgstr "Program"
+
+#, fuzzy
+#| msgid "The Digital Coil"
+msgid "Digital Coil"
+msgstr "The Digital Coil"
+
+msgid "Vorstand"
+msgstr "Board"
+
+msgid "Schülervertretung"
+msgstr "Student Council"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Connect"
+msgstr ""
+
+#, fuzzy
+#| msgid "The Digital Coil"
+msgid "Join The Digital Coil"
+msgstr "The Digital Coil"
+
+msgid "All rights reserved."
+msgstr ""
+
+msgid "Datenschutz"
+msgstr ""
+
+#, fuzzy
+#| msgid "The Digital Coil"
+msgid "SovereignYouth x DigitalCoil"
+msgstr "The Digital Coil"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "ZVR-Zahl"
+msgstr "ZVR Number"
+
+#, fuzzy
+#| msgid "Startseite"
+msgid "Zurück zur Startseite"
+msgstr "Home"
+
+msgid "Zugang zu internen Projekten und Tools"
+msgstr ""
+
+msgid "Benutzername"
+msgstr ""
+
+msgid "Passwort"
+msgstr ""
+
+msgid "Passwort vergessen?"
+msgstr ""
+
+msgid "Benutzername oder Passwort falsch."
+msgstr ""
+
+msgid "Anmelden"
+msgstr ""
+
+msgid "Noch kein Konto?"
+msgstr ""
+
+msgid "Registrieren"
+msgstr ""
+
+#, fuzzy
+#| msgid "Mitgliederbereich"
+msgid "Mitgliederforum"
+msgstr "Member Area"
+
+msgid "Beta"
+msgstr ""
+
+msgid "Interner Austausch für Mitglieder von Sovereign Youth"
+msgstr ""
+
+msgid "Noch keine Nachrichten im Channel."
+msgstr ""
+
+msgid "Nachricht schreiben..."
+msgstr ""
+
+msgid "Senden"
+msgstr ""
+
+msgid "Interested in joining the board? Send an email to"
+msgstr ""
+
+msgid "your@email.com"
+msgstr ""
+
+msgid "Youth Organization Portal"
+msgstr ""
+
+msgid "Empowering the next generation of cybersecurity professionals"
+msgstr ""
+
+msgid "Organizations"
+msgstr ""
+
+msgid "My Dashboard"
+msgstr ""
+
+msgid "Statutes"
+msgstr ""
+
+msgid "Add Organization"
+msgstr ""
+
+msgid "Personal Information"
+msgstr ""
+
+msgid "Organization *"
+msgstr ""
+
+msgid "Date of Birth *"
+msgstr ""
+
+msgid "Gender *"
+msgstr ""
+
+msgid "Phone Number"
+msgstr ""
+
+msgid "Address *"
+msgstr ""
+
+msgid "City *"
+msgstr ""
+
+msgid "Postal Code *"
+msgstr ""
+
+msgid "Country *"
+msgstr ""
+
+msgid "School"
+msgstr ""
+
+msgid "Grade (1-13)"
+msgstr ""
+
+msgid "Parent/Guardian Information"
+msgstr ""
+
+msgid "Parent/Guardian Name *"
+msgstr ""
+
+msgid "Parent/Guardian Phone *"
+msgstr ""
+
+msgid "Parent/Guardian Email *"
+msgstr ""
+
+msgid "Emergency Contact"
+msgstr ""
+
+msgid "Contact Name *"
+msgstr ""
+
+msgid "Contact Phone *"
+msgstr ""
+
+msgid "Relation *"
+msgstr ""
+
+msgid "Skills/Interests"
+msgstr ""
+
+msgid "Additional Notes"
+msgstr ""
+
+msgid "Join Organization"
+msgstr ""
+
+msgid "Member"
+msgstr ""
+
+msgid "Login to Join"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Organization Stats"
+msgstr ""
+
+msgid "Total Members:"
+msgstr ""
+
+msgid "Status:"
+msgstr ""
+
+msgid "Founded:"
+msgstr ""
+
+msgid "Upcoming Events"
+msgstr ""
+
+msgid "Cybersecurity Workshop"
+msgstr ""
+
+msgid "June 15, 2023"
+msgstr ""
+
+msgid "CTF Competition"
+msgstr ""
+
+msgid "July 1, 2023"
+msgstr ""
+
+msgid "Admin Actions"
+msgstr ""
+
+msgid "Admin Panel"
+msgstr ""
+
+msgid "Deactivate"
+msgstr ""
+
+msgid "Activate"
+msgstr ""
+
+msgid "Available Youth Organizations"
+msgstr ""
+
+msgid ""
+"Browse and join one of our youth organizations to get started with "
+"cybersecurity training and activities."
+msgstr ""
+
+msgid "No youth organizations are currently available."
+msgstr ""
+
+msgid "Previous"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "Grundsatzprogramm"
+msgstr ""
+
+msgid ""
+"Eine Generation zwischen Freiheit, Verantwortung und digitaler Souveränität"
+msgstr ""
+
+msgid "1. Unsere Vision"
+msgstr ""
+
+msgid ""
+"Wir glauben an eine Jugend, die Verantwortung übernimmt – für sich selbst, "
+"für andere und für die Zukunft."
+msgstr ""
+
+msgid ""
+"„The Sovereign Youth“ ist die starke Stimme der Schülerinnen und Schüler in "
+"den Bundesschülervertretungen (BSV) und Landesschülervertretungen (LSV) in "
+"Österreich und Deutschland. Wir setzen uns ein für eine Bildungspolitik, die "
+"Freiheit, Leistung und Eigenverantwortung in den Mittelpunkt stellt."
+msgstr ""
+
+msgid ""
+"Wir stehen für eine Generation, die sich nicht treiben lässt – sondern führt."
+msgstr ""
+
+msgid "2. Unser Selbstverständnis"
+msgstr ""
+
+msgid ""
+"Wir sind die Interessensvertretung engagierter Schülerinnen und Schüler, die "
+"ihre Schulen aktiv mitgestalten wollen. Als Teil der Schülervertretungen "
+"kämpfen wir für bessere Bildungschancen und eine starke Stimme der Jugend in "
+"der Bildungspolitik."
+msgstr ""
+
+msgid "Unser Fundament:"
+msgstr ""
+
+msgid "Bildungsfreiheit"
+msgstr ""
+
+msgid "statt Einheitsbrei"
+msgstr ""
+
+msgid "Leistung"
+msgstr ""
+
+msgid "statt Gleichmacherei"
+msgstr ""
+
+msgid "Eigenverantwortung"
+msgstr ""
+
+msgid "statt Bevormundung"
+msgstr ""
+
+msgid "Demokratie"
+msgstr ""
+
+msgid "in der Schule stärken"
+msgstr ""
+
+msgid "3. Unsere Ziele in den Schülervertretungen"
+msgstr ""
+
+msgid "📚 Bessere Bildung"
+msgstr ""
+
+msgid "Für ein leistungsorientiertes Schulsystem mit klaren Standards"
+msgstr ""
+
+msgid "Mehr Praxisbezug und digitale Kompetenzen im Unterricht"
+msgstr ""
+
+msgid ""
+"Stärkung der MINT-Fächer (Mathematik, Informatik, Naturwissenschaften, "
+"Technik)"
+msgstr ""
+
+msgid "Förderung von Sprachtalenten und kultureller Bildung"
+msgstr ""
+
+msgid "💡 Mitbestimmung stärken"
+msgstr ""
+
+msgid "Mehr Mitspracherecht für Schülerinnen und Schüler"
+msgstr ""
+
+msgid "Stärkung der demokratischen Strukturen in den BSV und LSV"
+msgstr ""
+
+msgid "Transparente Entscheidungsprozesse in der Schulpolitik"
+msgstr ""
+
+msgid "Bessere Ausstattung der Schülervertretungen"
+msgstr ""
+
+msgid "🚀 Zukunftskompetenzen fördern"
+msgstr ""
+
+msgid "Digitale Bildung für alle Schülerinnen und Schüler"
+msgstr ""
+
+msgid "Unternehmerisches Denken im Schulalltag verankern"
+msgstr ""
+
+msgid "Medienkompetenz und kritisches Denken stärken"
+msgstr ""
+
+msgid "Berufsorientierung und Praxiserfahrung ausbauen"
+msgstr ""
+
+msgid "4. Unsere Forderungen an die Bildungspolitik"
+msgstr ""
+
+msgid "🔹 Schulqualität verbessern"
+msgstr ""
+
+msgid "Leistungsförderung statt Nivellierung nach unten"
+msgstr ""
+
+msgid "Mehr Eigenverantwortung für Schulen"
+msgstr ""
+
+msgid "Bessere Aus- und Weiterbildung für Lehrkräfte"
+msgstr ""
+
+msgid "Moderne Ausstattung aller Schulen"
+msgstr ""
+
+msgid "🔹 Vielfalt ermöglichen"
+msgstr ""
+
+msgid "Wahlfreiheit zwischen Schulformen erhalten"
+msgstr ""
+
+msgid "Begabtenförderung ausbauen"
+msgstr ""
+
+msgid "Individuelle Lernwege ermöglichen"
+msgstr ""
+
+msgid "Inklusion bedarfsgerecht umsetzen"
+msgstr ""
+
+msgid "🔹 Digitalisierung gestalten"
+msgstr ""
+
+msgid "Flächendeckender Ausbau der digitalen Infrastruktur"
+msgstr ""
+
+msgid "Digitale Endgeräte für alle Schülerinnen und Schüler"
+msgstr ""
+
+msgid "Datenschutz und digitale Souveränität stärken"
+msgstr ""
+
+msgid "Open Educational Resources fördern"
+msgstr ""
+
+msgid "5. Unser Engagement in den BSV und LSV"
+msgstr ""
+
+msgid ""
+"Als aktive Mitglieder in den Schülervertretungen setzen wir uns ein für:"
+msgstr ""
+
+msgid "Eine starke Vertretung der Schülerinteressen auf allen Ebenen"
+msgstr ""
+
+msgid "Transparente und demokratische Entscheidungsprozesse"
+msgstr ""
+
+msgid "Eine sachliche und lösungsorientierte Bildungspolitik"
+msgstr ""
+
+msgid "Die Vernetzung engagierter Schülerinnen und Schüler"
+msgstr ""
+
+msgid "Die Weiterentwicklung der Schülervertretungsarbeit"
+msgstr ""
+
+msgid "6. Unsere Vision für die Schule von morgen"
+msgstr ""
+
+msgid "Wir träumen von Schulen, die..."
+msgstr ""
+
+msgid "...junge Menschen zu mündigen Bürgern erziehen"
+msgstr ""
+
+msgid "...Leistung fordern und fördern"
+msgstr ""
+
+msgid "...digitale Kompetenzen vermitteln"
+msgstr ""
+
+msgid "...demokratische Werte leben"
+msgstr ""
+
+msgid "...auf die Herausforderungen der Zukunft vorbereiten"
+msgstr ""
+
+msgid ""
+"Gemeinsam gestalten wir die Bildung von morgen – für eine starke und freie "
+"Jugend!"
+msgstr ""
+
+msgid "The Sovereign Youth"
+msgstr ""
+
+msgid "Selbstständig. Glaubwürdig. Zukunftsbewusst."
+msgstr ""
+
+msgid "Statuten"
+msgstr ""
+
+msgid "Das Grundsatzprogramm von „The Sovereign Youth“ wird hier vorgestellt."
+msgstr ""
+
+msgid "des Vereins „The Sovereign Youth“"
+msgstr ""
+
+msgid "§1 Name, Sitz und Tätigkeitsbereich"
+msgstr ""
+
+msgid "Der Verein führt den Namen „The Sovereign Youth“."
+msgstr ""
+
+msgid ""
+"Er hat seinen Sitz in Salzburg und erstreckt seine Tätigkeit auf ganz "
+"Österreich und Europa."
+msgstr ""
+
+msgid "Die Errichtung von Zweigvereinen und lokalen Gruppen ist vorgesehen."
+msgstr ""
+
+msgid "§2 Zweck des Vereins"
+msgstr ""
+
+msgid ""
+"Der Verein ist nicht auf Gewinn gerichtet und verfolgt ausschließlich "
+"gemeinnützige Zwecke."
+msgstr ""
+
+msgid ""
+"Ziel ist die Förderung einer wertebasierten Jugendkultur auf Grundlage von "
+"geistiger Freiheit, Eigenverantwortung und europäischer Kultur."
+msgstr ""
+
+msgid "Der Verein ist überparteilich und unabhängig."
+msgstr ""
+
+msgid "Die Tätigkeit gliedert sich in zwei klar getrennte Bereiche:"
+msgstr ""
+
+msgid "Sovereign Students – schulpolitisch und gesellschaftlich aktiv"
+msgstr ""
+
+msgid "The Digital Coil – bildungs- und technikorientiertes Lernprojekt"
+msgstr ""
+
+msgid "§3 Mittel zur Erreichung des Vereinszwecks"
+msgstr ""
+
+msgid "Die Ziele werden verwirklicht durch:"
+msgstr ""
+
+msgid "Veranstaltungen, Workshops, Seminare und Diskussionen"
+msgstr ""
+
+msgid "Online-Formate, Lernzirkel, Publikationen"
+msgstr ""
+
+msgid "Öffentlichkeitsarbeit und Kampagnen"
+msgstr ""
+
+msgid "Aufbau eines Netzwerks junger engagierter Menschen"
+msgstr ""
+
+msgid "Zusammenarbeit mit Schulen, Organisationen und freien Initiativen"
+msgstr ""
+
+msgid "§4 Mitgliedschaft"
+msgstr ""
+
+msgid "Mitglied kann jede natürliche Person werden, die die Ziele unterstützt."
+msgstr ""
+
+#, fuzzy
+#| msgid "Mitglied werden"
+msgid "Mitgliedsarten:"
+msgstr "Become a Member"
+
+msgid "Aktivmitglieder (14–35 Jahre)"
+msgstr ""
+
+msgid "Fördermitglieder (ab 36 Jahren oder unterstützend)"
+msgstr ""
+
+msgid "Ehrenmitglieder (auf Vorschlag durch die Generalversammlung)"
+msgstr ""
+
+msgid ""
+"Voraussetzung: Zustimmung zu den Grundwerten (Demokratie, Menschenwürde, "
+"geistige Freiheit, Eigenverantwortung)."
+msgstr ""
+
+msgid "§5 Rechte und Pflichten der Mitglieder"
+msgstr ""
+
+msgid "Teilnahme an Vereinsaktivitäten."
+msgstr ""
+
+msgid "Aktivmitglieder besitzen Stimmrecht in der Generalversammlung."
+msgstr ""
+
+msgid ""
+"Mitglieder verpflichten sich zur Einhaltung der Statuten und Unterstützung "
+"des Vereinszwecks."
+msgstr ""
+
+msgid "§6 Organe des Vereins"
+msgstr ""
+
+msgid "Generalversammlung"
+msgstr ""
+
+msgid "Rechnungsprüfer:innen"
+msgstr ""
+
+msgid "Bereichsleitungen (optional)"
+msgstr ""
+
+msgid "§7 Generalversammlung"
+msgstr ""
+
+msgid "Höchstes Organ, mind. einmal jährlich."
+msgstr ""
+
+msgid "Zuständig für:"
+msgstr ""
+
+msgid "Wahl/Entlastung des Vorstands"
+msgstr ""
+
+msgid "Statutenänderungen"
+msgstr ""
+
+msgid "Grundsatzentscheidungen"
+msgstr ""
+
+msgid "Auflösung"
+msgstr ""
+
+#, fuzzy
+#| msgid "Vorstand"
+msgid "§8 Vorstand"
+msgstr "Board"
+
+msgid "Besteht aus mindestens drei Personen:"
+msgstr ""
+
+msgid "Obmann/Obfrau"
+msgstr ""
+
+msgid "Kassier:in"
+msgstr ""
+
+msgid "Schriftführer:in"
+msgstr ""
+
+msgid "(Optional: Stellvertretung für Obmann/Obfrau)"
+msgstr ""
+
+msgid "Führt laufende Geschäfte, vertritt den Verein nach außen."
+msgstr ""
+
+msgid "Funktionsperiode: zwei Jahre, Wiederwahl möglich."
+msgstr ""
+
+msgid "§9 Rechnungsprüfer:innen"
+msgstr ""
+
+msgid "Zwei Personen, gewählt von der Generalversammlung für zwei Jahre."
+msgstr ""
+
+msgid "Prüfen Finanzen, berichten der Generalversammlung."
+msgstr ""
+
+msgid "§10 Auflösung des Vereins"
+msgstr ""
+
+msgid ""
+"Nur mit Zweidrittelmehrheit in einer eigens einberufenen Generalversammlung."
+msgstr ""
+
+msgid ""
+"Vereinsvermögen fällt an eine gemeinnützige Organisation mit ähnlichem Zweck."
+msgstr ""
+
+msgid "Verantwortlich für die organisatorischen Abläufe."
+msgstr ""
+
+msgid "Public Relations"
+msgstr ""
+
+msgid "Verantwortlich für Öffentlichkeitsarbeit und Medienkommunikation."
+msgstr ""
+
+msgid "Mitgestaltung von Strategie & Ausrichtung"
+msgstr ""
+
+msgid "Leitung von Projekten & Bereichen"
+msgstr ""
+
+msgid "Entdecke unsere Partner-Communities und Netzwerke"
+msgstr ""
+
+msgid ""
+"Come join Austrian SME Economist and political commentator Günther Fehlinger-"
+"Jahn on his quest to decolonise the world and make it safe for Democracy!"
+msgstr ""
+
+msgid ""
+"Host of a highly informative podcast and star of the Hearts of Iron IV Mod "
+"\"The Fire Rises\", Gunther needs your help to change the world."
+msgstr ""
+
+msgid ""
+"With a fast growing community, regular livestreams, and a Q&A from Gunther "
+"himself, what are you waiting for? Join our server!"
+msgstr ""
+
+msgid "Phone: +436642358516"
+msgstr ""
+
+msgid "Email: sovereignyouth@cyberenigma.dev"
+msgstr ""
+
+msgid "About Us"
+msgstr ""
+
+#, fuzzy
+#| msgid "Programm"
+msgid "Program"
+msgstr "Program"
+
+msgid "Board"
+msgstr ""
+
+msgid "Student Council"
+msgstr ""
+
+msgid "Become a Member"
+msgstr ""
+
+msgid "© 2025 Sovereign Youth. All rights reserved."
+msgstr ""
+
+msgid "Legal Notice"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr ""
