@@ -1,9 +1,344 @@
-{% extends 'base.html' %} {% load i18n %} {% load static %} {% block title %}{% trans 'Startseite' %} | {% trans 'Sovereign Youth' %}{% endblock %} {% block extra_head %} <style> /* Section Styling */ section { padding: 5rem 0; position: relative; background-color: #1a1a2e; color: #e6e6e6; } section:nth-child(odd) { background-color: #16213e; } .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; } .section-header { text-align: center; margin-bottom: 3rem; } .section-header h2 { font-size: 2.5rem; color: #e94560; margin-bottom: 1rem; } .section-header p { font-size: 1.2rem; color: #b8b8b8; max-width: 800px; margin: 0 auto 2rem; } /* Hero Section */ .hero { background: linear-gradient(135deg, #1a1a2e 0%, #2a1a4e 100%); color: white; padding: 8rem 0; text-align: center; } .hero-content { max-width: 800px; margin: 0 auto; } .hero img { max-width: 150px; margin-bottom: 2rem; } .hero h1 { font-size: 3rem; margin-bottom: 1.5rem; line-height: 1.2; } .hero p { font-size: 1.5rem; margin-bottom: 2.5rem; color: rgba(255, 255, 255, 0.9); } .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; } .btn { display: inline-flex; align-items: center; padding: 0.8rem 1.8rem; border-radius: 4px; font-weight: 500; text-decoration: none; transition: all 0.3s ease; } .btn-primary { background: #e94560; color: white; } .btn-primary:hover { background: #d63950; transform: translateY(-2px); } .btn-secondary { background: #7289DA; color: white; } .btn-secondary:hover { background: #5b6eae; transform: translateY(-2px); } .btn i { margin-right: 0.5rem; } /* Features Grid */ .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; } .feature-card { background: #16213e; border: 1px solid #2a2a4e; border-radius: 8px; padding: 2rem; transition: transform 0.3s ease; color: #e6e6e6; } .feature-card:hover { transform: translateY(-5px); border-color: #e94560; } .feature-icon { font-size: 2.5rem; color: #e94560; margin-bottom: 1.5rem; } .feature-card h3, .feature-card h4 { color: #ffffff; margin-bottom: 1rem; margin-top: 1rem; } .feature-card p, .feature-card li { color: #b8b8b8; } .member-image { text-align: center; margin-bottom: 1rem; } .member-image img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 3px solid #e94560; } /* Two Column Layout */ .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; } @media (max-width: 768px) { .two-column { grid-template-columns: 1fr; gap: 2rem; } } /* Accordion for Ideological Position */ .accordion { margin-top: 2rem; } .accordion-item { margin-bottom: 1rem; border: 1px solid #2a2a4e; border-radius: 4px; overflow: hidden; background: #16213e; } .accordion-header { background: #1a1a2e; padding: 1rem 1.5rem; cursor: pointer; font-weight: 500; display: flex; justify-content: space-between; align-items: center; color: #ffffff; border-bottom: 1px solid #2a2a4e; } .accordion-content { padding: 1.5rem; background: #16213e; border-top: 1px solid #2a2a4e; color: #b8b8b8; } /* Highlight Box */ .highlight-box { background: #16213e; border-left: 4px solid #e94560; padding: 2rem; border-radius: 4px; margin: 2rem 0; color: #e6e6e6; } .highlight-box h3, .highlight-box h4 { color: #ffffff; margin-bottom: 1rem; } .highlight-box p, .highlight-box li { color: #b8b8b8; } .highlight-box strong { color: #e94560; } /* Footer */ footer { background: #0f0f23; color: #e6e6e6; padding: 3rem 0 1rem; } .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; } .footer-section h3 { color: #e94560; margin-bottom: 1rem; } .footer-section p, .footer-section li { color: #b8b8b8; margin-bottom: 0.5rem; } .footer-section a { color: #b8b8b8; text-decoration: none; transition: color 0.3s ease; } .footer-section a:hover { color: #e94560; } .footer-bottom { border-top: 1px solid #2a2a4e; padding-top: 1rem; text-align: center; color: #6c6c6c; } .legal-links { margin-top: 1rem; } .legal-links a { margin: 0 1rem; color: #6c6c6c; } /* Footer styles */ footer { background: #0f0f23; color: #e6e6e6; padding: 3rem 0 1rem; } .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; } .footer-section h3 { color: #e94560; margin-bottom: 1rem; } .footer-section p, .footer-section li { color: #b8b8b8; margin-bottom: 0.5rem; } .footer-section a { color: #b8b8b8; text-decoration: none; transition: color 0.3s ease; } .footer-section a:hover { color: #e94560; } .footer-bottom { border-top: 1px solid #2a2a4e; padding-top: 1rem; text-align: center; color: #6c6c6c; } .legal-links { margin-top: 1rem; } </style> {% endblock %}
+{% extends 'base.html' %} {% load i18n %} {% load static %} {% block title %}{% trans 'Startseite' %} | {% trans
+'Sovereign Youth' %}{% endblock %} {% block extra_head %} <style>
+    /* Section Styling */
+    section {
+        padding: 5rem 0;
+        position: relative;
+        background-color: #1a1a2e;
+        color: #e6e6e6;
+    }
 
-{% block content %} <!-- Hero Section --> <section class="hero" id="home"> <div class="container"> <div class="hero-content"> <img src="{% static 'coil.JPG' %}" alt="{% trans 'Sovereign Youth x DigitalCoil Logo' %}" class="main-logo">
+    section:nth-child(odd) {
+        background-color: #16213e;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .section-header h2 {
+        font-size: 2.5rem;
+        color: #e94560;
+        margin-bottom: 1rem;
+    }
+
+    .section-header p {
+        font-size: 1.2rem;
+        color: #b8b8b8;
+        max-width: 800px;
+        margin: 0 auto 2rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(135deg, #1a1a2e 0%, #2a1a4e 100%);
+        color: white;
+        padding: 8rem 0;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .hero img {
+        max-width: 150px;
+        margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.8rem 1.8rem;
+        border-radius: 4px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+        background: #e94560;
+        color: white;
+    }
+
+    .btn-primary:hover {
+        background: #d63950;
+        transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+        background: #7289DA;
+        color: white;
+    }
+
+    .btn-secondary:hover {
+        background: #5b6eae;
+        transform: translateY(-2px);
+    }
+
+    .btn i {
+        margin-right: 0.5rem;
+    }
+
+    /* Features Grid */
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .feature-card {
+        background: #16213e;
+        border: 1px solid #2a2a4e;
+        border-radius: 8px;
+        padding: 2rem;
+        transition: transform 0.3s ease;
+        color: #e6e6e6;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+        border-color: #e94560;
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+        color: #e94560;
+        margin-bottom: 1.5rem;
+    }
+
+    .feature-card h3,
+    .feature-card h4 {
+        color: #ffffff;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .feature-card p,
+    .feature-card li {
+        color: #b8b8b8;
+    }
+
+    .member-image {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .member-image img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #e94560;
+    }
+
+    /* Two Column Layout */
+    .two-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    @media (max-width: 768px) {
+        .two-column {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+    }
+
+    /* Accordion for Ideological Position */
+    .accordion {
+        margin-top: 2rem;
+    }
+
+    .accordion-item {
+        margin-bottom: 1rem;
+        border: 1px solid #2a2a4e;
+        border-radius: 4px;
+        overflow: hidden;
+        background: #16213e;
+    }
+
+    .accordion-header {
+        background: #1a1a2e;
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffffff;
+        border-bottom: 1px solid #2a2a4e;
+    }
+
+    .accordion-content {
+        padding: 1.5rem;
+        background: #16213e;
+        border-top: 1px solid #2a2a4e;
+        color: #b8b8b8;
+    }
+
+    /* Highlight Box */
+    .highlight-box {
+        background: #16213e;
+        border-left: 4px solid #e94560;
+        padding: 2rem;
+        border-radius: 4px;
+        margin: 2rem 0;
+        color: #e6e6e6;
+    }
+
+    .highlight-box h3,
+    .highlight-box h4 {
+        color: #ffffff;
+        margin-bottom: 1rem;
+    }
+
+    .highlight-box p,
+    .highlight-box li {
+        color: #b8b8b8;
+    }
+
+    .highlight-box strong {
+        color: #e94560;
+    }
+
+    /* Footer */
+    footer {
+        background: #0f0f23;
+        color: #e6e6e6;
+        padding: 3rem 0 1rem;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-section h3 {
+        color: #e94560;
+        margin-bottom: 1rem;
+    }
+
+    .footer-section p,
+    .footer-section li {
+        color: #b8b8b8;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-section a {
+        color: #b8b8b8;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover {
+        color: #e94560;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #2a2a4e;
+        padding-top: 1rem;
+        text-align: center;
+        color: #6c6c6c;
+    }
+
+    .legal-links {
+        margin-top: 1rem;
+    }
+
+    .legal-links a {
+        margin: 0 1rem;
+        color: #6c6c6c;
+    }
+
+    /* Footer styles */
+    footer {
+        background: #0f0f23;
+        color: #e6e6e6;
+        padding: 3rem 0 1rem;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-section h3 {
+        color: #e94560;
+        margin-bottom: 1rem;
+    }
+
+    .footer-section p,
+    .footer-section li {
+        color: #b8b8b8;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-section a {
+        color: #b8b8b8;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover {
+        color: #e94560;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #2a2a4e;
+        padding-top: 1rem;
+        text-align: center;
+        color: #6c6c6c;
+    }
+
+    .legal-links {
+        margin-top: 1rem;
+    }
+</style> {% endblock %}
+
+{% block content %} <!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content"> <img src="{% static 'coil.JPG' %}"
+                alt="{% trans 'Sovereign Youth x DigitalCoil Logo' %}" class="main-logo">
             <h1>{% trans 'Sovereign Youth x DigitalCoil' %}</h1>
             <p>{% trans 'Eine Schüler- und Jugendorganisation für Leistung, Verantwortung und souveränes Denken.' %}</p>
-            <p>{% trans 'Wir arbeiten daran, Bildung besser zu machen, Leistung zu steigern und junge Menschen früh in Verantwortung zu bringen – durch Projekte, nicht durch Aktivismus.' %}</p>
+            <p>{% trans 'Wir arbeiten daran, Bildung besser zu machen, Leistung zu steigern und junge Menschen früh in
+                Verantwortung zu bringen – durch Projekte, nicht durch Aktivismus.' %}</p>
             <div class="cta-buttons">
                 <a href="#mitglied-werden" class="btn btn-primary">
                     <i class="fas fa-users"></i>{% trans 'Mitglied werden' %}
@@ -31,18 +366,21 @@
                     <li>{% trans 'Verantwortung übernehmen' %}</li>
                     <li>{% trans 'und an realen Problemen arbeiten wollen' %}</li>
                 </ul>
-                <p>{% trans 'Statt leerer Diskussionen setzen wir auf konkrete Projekte, Wissensaufbau und Zusammenarbeit auf Augenhöhe.' %}</p>
+                <p>{% trans 'Statt leerer Diskussionen setzen wir auf konkrete Projekte, Wissensaufbau und
+                    Zusammenarbeit auf Augenhöhe.' %}</p>
             </div>
             <div>
                 <h3>{% trans 'Warum das wichtig ist' %}</h3>
-                <p>{% trans 'Schule und formale Bildung vermitteln Inhalte – aber kaum Orientierung, Verantwortung oder praktische Fähigkeiten.' %}</p>
+                <p>{% trans 'Schule und formale Bildung vermitteln Inhalte – aber kaum Orientierung, Verantwortung oder
+                    praktische Fähigkeiten.' %}</p>
                 <p>{% trans 'Wir schließen diese Lücke:' %}</p>
                 <ul>
                     <li>{% trans 'durch anwendungsnahe Bildung' %}</li>
                     <li>{% trans 'durch leistungsorientierte Zusammenarbeit' %}</li>
                     <li>{% trans 'durch ein Umfeld, das Eigeninitiative belohnt' %}</li>
                 </ul>
-                <p><strong>{% trans 'Leistung steigern' %}</strong>{% trans 'heißt für uns: besser denken, besser lernen, besser handeln.' %}</p>
+                <p><strong>{% trans 'Leistung steigern' %}</strong>{% trans 'heißt für uns: besser denken, besser
+                    lernen, besser handeln.' %}</p>
             </div>
         </div>
     </div>
@@ -141,32 +479,45 @@
         <div class="features-grid">
             <div class="feature-card">
                 <div class="member-image">
-                    <img src="{% static 'IMG_5059.jpg' %}" alt="Terence Nwaeke"> </div> <h3>{% trans 'Terence Nwaeke' %}</h3>
+                    <img src="{% static 'IMG_5059.jpg' %}" alt="Terence Nwaeke">
+                </div>
+                <h3>{% trans 'Terence Nwaeke' %}</h3>
                 <p style="color: #e94560; font-weight: 600;">{% trans 'Vorsitzender für IT und Social Media' %}</p>
-                <p>{% trans 'Verantwortlich für die technische Infrastruktur und digitale Präsenz von Sovereign Youth.' %}</p>
+                <p>{% trans 'Verantwortlich für die technische Infrastruktur und digitale Präsenz von Sovereign Youth.'
+                    %}</p>
             </div>
             <div class="feature-card">
                 <div class="member-image">
-                    <img src="{% static 'IMG_5323 2.jpg' %}" alt="Flora Kohlbacher"> </div> <h3>{% trans 'Flora Kohlbacher' %}</h3>
+                    <img src="{% static 'IMG_5323 2.jpg' %}" alt="Flora Kohlbacher">
+                </div>
+                <h3>{% trans 'Flora Kohlbacher' %}</h3>
                 <p style="color: #e94560; font-weight: 600;">{% trans 'Vorsitzende für Mitgliederentwicklung' %}</p>
                 <p>{% trans 'Verantwortlich für Kommunikation und Rekrutierung.' %}</p>
             </div>
             <div class="feature-card">
                 <div class="member-image">
-                    <img src="{% static 'IMG_5061.jpg' %}" alt="Phillip Auber"> </div> <h3>{% trans 'Phillip Auber' %}</h3>
+                    <img src="{% static 'IMG_5061.jpg' %}" alt="Phillip Auber">
+                </div>
+                <h3>{% trans 'Phillip Auber' %}</h3>
                 <p style="color: #e94560; font-weight: 600;">{% trans 'Stv. Vorsitzender für Organisation' %}</p>
                 <p>{% trans 'Verantwortlich für die organisatorische Abläufe.' %}</p>
             </div>
             <div class="feature-card">
                 <div class="member-image">
-                    <img src="{% static 'geschaeftsführer.png' %}" alt="Carl Friedrich"> </div> <h3>{% trans 'Carl Friedrich' %}</h3>
+                    <img src="{% static 'geschaeftsfuehrer.png' %}" alt="Carl Friedrich">
+                </div>
+                <h3>{% trans 'Carl Friedrich' %}</h3>
                 <p style="color: #e94560; font-weight: 600;">{% trans 'Geschäftsführer' %}</p>
                 <p>{% trans 'Verantwortlich für die strategische Führung und operative Leitung.' %}</p>
             </div>
             <div class="feature-card">
                 <div class="member-image">
-                    <img src="{% static 'IMG_5166.jpg' %}" alt="Nelson Ogie"> </div> <h3>Nelson Ogie</h3> <p style="color: #e94560; font-weight: 600;">{% trans 'Schriftführer und Kreativ Workshop Leiter' %}</p>
-                <p>{% trans 'Verantwortlich für die Protokollführung sowie die Leitung und Gestaltung kreativer Workshops.' %}</p>
+                    <img src="{% static 'IMG_5166.jpg' %}" alt="Nelson Ogie">
+                </div>
+                <h3>Nelson Ogie</h3>
+                <p style="color: #e94560; font-weight: 600;">{% trans 'Schriftführer und Kreativ Workshop Leiter' %}</p>
+                <p>{% trans 'Verantwortlich für die Protokollführung sowie die Leitung und Gestaltung kreativer
+                    Workshops.' %}</p>
             </div>
         </div>
     </div>
@@ -181,31 +532,41 @@
         <div class="features-grid">
             <div class="feature-card">
                 <div class="member-image">
-                    <img src="{% static 'AJ-Holzer.png' %}" alt="AJ_Holzer"> </div> <h3>{% trans 'AJ_Holzer' %}</h3>
+                    <img src="{% static 'AJ-Holzer.png' %}" alt="AJ_Holzer">
+                </div>
+                <h3>{% trans 'AJ_Holzer' %}</h3>
                 <p style="color: #e94560; font-weight: 600;">{% trans 'Cybersecurity Team' %}</p>
                 <p>{% trans 'Verantwortlich für die digitale Sicherheit und Integrität unserer Systeme.' %}</p>
             </div>
             <div class="feature-card">
                 <div class="member-image">
-                    <img src="{% static 'Roll_Ente.png' %}" alt="Rollente"> </div> <h3>{% trans 'Rollente' %}</h3>
+                    <img src="{% static 'Roll_Ente.png' %}" alt="Rollente">
+                </div>
+                <h3>{% trans 'Rollente' %}</h3>
                 <p style="color: #e94560; font-weight: 600;">{% trans 'Cybersecurity Team' %}</p>
                 <p>{% trans 'Verantwortlich für die digitale Sicherheit und Integrität unserer Systeme.' %}</p>
             </div>
             <div class="feature-card">
                 <div class="member-image">
-                    <img src="{% static 'IMG_5059.jpg' %}" alt="Terence Nwaeke"> </div> <h3>{% trans 'Terence Nwaeke' %}</h3>
+                    <img src="{% static 'IMG_5059.jpg' %}" alt="Terence Nwaeke">
+                </div>
+                <h3>{% trans 'Terence Nwaeke' %}</h3>
                 <p style="color: #e94560; font-weight: 600;">{% trans 'Leiter Cybersecurity Team' %}</p>
                 <p>{% trans 'Verantwortlich für die digitale Sicherheit und Integrität unserer Systeme.' %}</p>
             </div>
             <div class="feature-card">
                 <div class="member-image">
-                    <img src="{% static 'abe_schmid.png' %}" alt="Cesario Kufner"> </div> <h3>{% trans 'Cesario Kufner' %}</h3>
+                    <img src="{% static 'abe_schmid.png' %}" alt="Cesario Kufner">
+                </div>
+                <h3>{% trans 'Cesario Kufner' %}</h3>
                 <p style="color: #e94560; font-weight: 600;">{% trans 'Cybersecurity Team' %}</p>
                 <p>{% trans 'Verantwortlich für die digitale Sicherheit und Integrität unserer Systeme.' %}</p>
             </div>
             <div class="feature-card">
                 <div class="member-image">
-                    <img src="{% static 'rechnungsprüferin.png' %}" alt="Sarah Horn"> </div> <h3>{% trans 'Sarah Horn' %}</h3>
+                    <img src="{% static 'rechnungsprueferin.png' %}" alt="Sarah Horn">
+                </div>
+                <h3>{% trans 'Sarah Horn' %}</h3>
                 <p style="color: #e94560; font-weight: 600;">{% trans 'Rechnungsprüferin' %}</p>
                 <p>{% trans 'Verantwortlich für die ordnungsgemäße Finanzprüfung und Transparenz.' %}</p>
             </div>
@@ -283,9 +644,15 @@
                     <a href="https://discord.gg/gBercTcfzW" class="btn btn-secondary" target="_blank">
                         <i class="fab fa-discord"></i>{% trans 'Jetzt teilnehmen' %}
                     </a>
-                    {% if user.is_authenticated %} <a href="{% url 'member' %}" class="btn btn-primary"> <i class="fas fa-users"></i>{% trans 'Mitgliederbereich' %}
+                    {% if user.is_authenticated %} <a href="{% url 'member' %}" class="btn btn-primary"> <i
+                            class="fas fa-users"></i>{% trans 'Mitgliederbereich' %}
                     </a>
-                    {% endif %} </div> </div> <div class="feature-card"> <div class="feature-icon"> <i class="fas fa-hands-helping"></i> </div> <h3>{% trans 'Fördermitgliedschaften & Partnerschaften' %}</h3>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"> <i class="fas fa-hands-helping"></i> </div>
+                <h3>{% trans 'Fördermitgliedschaften & Partnerschaften' %}</h3>
                 <p>{% trans 'Unterstützen Sie unsere Arbeit durch eine Fördermitgliedschaft oder Partnerschaft.' %}</p>
                 <div class="cta-buttons" style="margin-top: 1rem;">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxj5kQDx4oSeALrfvA2udzKWR4SoRqBLG7jjEK3hqjtzHDNA/viewform?usp=header"
@@ -293,9 +660,12 @@
                         <i class="fas fa-hand-holding-heart"></i>{% trans 'Förderantrag stellen' %}
                     </a>
                     <div style="margin-top: 1rem;">
-                        <a href="{% static 'Supporting Memberships & Network Partnerships.pdf' %}" target="_blank" class="btn btn-secondary" style="margin-right: 0.5rem;"> <i class="fas fa-file-pdf"></i>{% trans 'Englisch (PDF)' %}
+                        <a href="{% static 'Supporting Memberships & Network Partnerships.pdf' %}" target="_blank"
+                            class="btn btn-secondary" style="margin-right: 0.5rem;"> <i class="fas fa-file-pdf"></i>{%
+                            trans 'Englisch (PDF)' %}
                         </a>
-                        <a href="{% static 'Fördermitgliedschaften & Partnerschaften.pdf' %}" target="_blank" class="btn btn-secondary"> <i class="fas fa-file-pdf"></i>{% trans 'Deutsch (PDF)' %}
+                        <a href="{% static 'Fördermitgliedschaften & Partnerschaften.pdf' %}" target="_blank"
+                            class="btn btn-secondary"> <i class="fas fa-file-pdf"></i>{% trans 'Deutsch (PDF)' %}
                         </a>
                     </div>
                 </div>
@@ -320,9 +690,13 @@
             <div style="padding: 1.5rem;">
                 <h3>{% trans 'The Fehlinger Doctrine! 🏛️' %}</h3>
                 <div style="background: rgba(233, 69, 96, 0.1); padding: 1rem; border-radius: 8px; margin: 1.5rem 0;">
-                    <p style="margin: 0.5rem 0;">{% blocktrans %}🐦‍🔥 Come join Austrian SME Economist and political commentator Günther Fehlinger-Jahn on his quest to decolonise the world and make it safe for Democracy! 🐦‍🔥{% endblocktrans %}</p>
-                    <p style="margin: 0.5rem 0;">{% blocktrans %}🔥 Host of a highly informative podcast and star of the Hearts of Iron IV Mod "The Fire Rises", Gunther needs your help to change the world.{% endblocktrans %}</p>
-                    <p style="margin: 0.5rem 0 0 0;">{% blocktrans %}🌐 With a fast growing community, regular livestreams, and a Q&A from Gunther himself, what are you waiting for? Join our server! 🌐{% endblocktrans %}</p>
+                    <p style="margin: 0.5rem 0;">{% blocktrans %}🐦‍🔥 Come join Austrian SME Economist and political
+                        commentator Günther Fehlinger-Jahn on his quest to decolonise the world and make it safe for
+                        Democracy! 🐦‍🔥{% endblocktrans %}</p>
+                    <p style="margin: 0.5rem 0;">{% blocktrans %}🔥 Host of a highly informative podcast and star of the
+                        Hearts of Iron IV Mod "The Fire Rises", Gunther needs your help to change the world.{% endblocktrans %}</p>
+                    <p style="margin: 0.5rem 0 0 0;">{% blocktrans %}🌐 With a fast growing community, regular
+                        livestreams, and a Q&A from Gunther himself, what are you waiting for? Join our server! 🌐{% endblocktrans %}</p>
                 </div>
                 <a href="https://discord.gg/Fm2htZX5hu" class="btn btn-secondary" target="_blank"
                     style="margin-top: 1rem; background: #5865F2; border: none; padding: 0.6rem 1.5rem; font-weight: 600; letter-spacing: 0.5px; font-size: 0.9rem;">
@@ -383,7 +757,8 @@
         style="background-color: #1a1a2e; margin: 5% auto; padding: 2rem; border: 1px solid #2a2a4e; width: 80%; max-width: 800px; color: #e6e6e6; border-radius: 8px; position: relative;">
         <span class="close" onclick="document.getElementById('impressumModal').style.display='none'"
             style="position: absolute; right: 1.5rem; top: 1rem; font-size: 1.8rem; font-weight: bold; cursor: pointer; color: #e94560;">&times;</span>
-        <h2 style="color: #e94560; margin-bottom: 1.5rem; border-bottom: 1px solid #2a2a4e; padding-bottom: 0.5rem;">{% trans 'Impressum' %}</h2>
+        <h2 style="color: #e94560; margin-bottom: 1.5rem; border-bottom: 1px solid #2a2a4e; padding-bottom: 0.5rem;">{%
+            trans 'Impressum' %}</h2>
 
         <h3>Sovereign Youth</h3>
         <p>Verein in Gründung – ZVR-Eintragung beantragt</p>
@@ -400,16 +775,30 @@
         <p>E-Mail: sovereignyouth@cyberenigma.dev</p>
 
         <h4>{% trans 'Vereinszweck' %}</h4>
-        <p>{% trans 'Der Verein verfolgt das Ziel der Förderung von pro-europäischer Jugend- und Bildungsarbeit. Der Schwerpunkt liegt dabei auf der Entwicklung und Umsetzung von Projekten, die junge Menschen befähigen, Verantwortung zu übernehmen und aktiv an der Gestaltung der Gesellschaft mitzuwirken.' %}</p>
+        <p>{% trans 'Der Verein verfolgt das Ziel der Förderung von pro-europäischer Jugend- und Bildungsarbeit. Der
+            Schwerpunkt liegt dabei auf der Entwicklung und Umsetzung von Projekten, die junge Menschen befähigen,
+            Verantwortung zu übernehmen und aktiv an der Gestaltung der Gesellschaft mitzuwirken.' %}</p>
 
         <h4>{% trans 'Vertretungsberechtigtes Organ' %}</h4>
         <p>{% trans 'Der Vorstand gemäß den Bestimmungen der Vereinsstatuten.' %}</p>
 
         <h4>{% trans 'Haftungsausschluss' %}</h4>
-        <p>{% trans 'Der Verein übernimmt keine Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen den Verein, die sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Vereins kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt.' %}</p>
+        <p>{% trans 'Der Verein übernimmt keine Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität
+            der bereitgestellten Informationen. Haftungsansprüche gegen den Verein, die sich auf Schäden materieller
+            oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw.
+            durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich
+            ausgeschlossen, sofern seitens des Vereins kein nachweislich vorsätzliches oder grob fahrlässiges
+            Verschulden vorliegt.' %}</p>
 
         <h4>{% trans 'Externe Links' %}</h4>
-        <p>{% trans 'Diese Website enthält Verknüpfungen zu Websites Dritter (externe Links). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Verein hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Verein hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Verein die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist dem Verein ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.' %}</p>
+        <p>{% trans 'Diese Website enthält Verknüpfungen zu Websites Dritter (externe Links). Diese Websites unterliegen
+            der Haftung der jeweiligen Betreiber. Der Verein hat bei der erstmaligen Verknüpfung der externen Links die
+            fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine
+            Rechtsverstöße ersichtlich. Der Verein hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und
+            auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Verein
+            die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen
+            Links ist dem Verein ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von
+            Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.' %}</p>
 
         <p style="margin-top: 2rem; font-size: 0.9em; color: #b8b8b8;">
             {% trans 'Stand: Januar 2025' %}
