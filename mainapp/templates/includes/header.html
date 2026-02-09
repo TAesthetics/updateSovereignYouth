@@ -1,0 +1,232 @@
+{% load static %}
+<header class="header">
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="/" class="logo-link">
+                <img src="{% static 'coil.JPG' %}" alt="Sovereign Youth x DigitalCoil Logo" class="nav-logo">
+                <span class="logo-text">SovereignYouth x DigitalCoil</span>
+            </a>
+        </div>
+
+        <div class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links">
+            {% if user.is_authenticated %}
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="{% url 'member' %}" class="nav-link">Member Area</a></li>
+            <li><a href="{% url 'logout' %}" class="nav-link">Logout</a></li>
+            {% else %}
+            <li><a href="#wer-wir-sind" class="nav-link scroll-link">About Us</a></li>
+            <li><a href="#programm" class="nav-link scroll-link">Program</a></li>
+            <li><a href="#digital-coil" class="nav-link scroll-link">The Digital Coil</a></li>
+            <li><a href="#vorstand" class="nav-link scroll-link">Board</a></li>
+            <li><a href="#schuelervertretung" class="nav-link scroll-link">Services</a></li>
+            <li><a href="#mitglied-werden" class="nav-link cta-button">Become a Member</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+<style>
+    /* Styles contained in header.html were removed as they are largely duplicates or specific to language switcher which is gone.
+       If specific button styles are missing, they should be in styles.css.
+       Keeping the script for smooth scrolling. */
+
+    .org-banner {
+        text-align: center;
+        background: #4a6fa5;
+        color: white;
+        padding: 8px 0;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background: #4a6fa5;
+        color: white !important;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+        background: #3a5a80;
+    }
+
+    .discord-button {
+        background: #7289DA !important;
+    }
+
+    .discord-button:hover {
+        background: #5b6eae !important;
+        transform: translateY(-2px);
+    }
+
+    .discord-button i {
+        margin-right: 8px;
+    }
+
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .nav-link {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 0;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+        color: #4a6fa5;
+    }
+
+    .nav-link.cta-button {
+        background: #4a6fa5;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+    }
+
+    .nav-link.cta-button:hover {
+        background: #3a5a80;
+        color: #fff;
+    }
+
+    /* Modal styles remain if needed */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .modal.show {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 25px 30px;
+        border: 1px solid #e0e0e0;
+        width: 90%;
+        max-width: 500px;
+        border-radius: 8px;
+        position: relative;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        text-align: center;
+    }
+
+    .modal h2 {
+        color: #2c3e50;
+        margin-bottom: 15px;
+    }
+
+    .modal p {
+        color: #555;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .close-modal {
+        color: #999;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        line-height: 1;
+        transition: color 0.2s;
+    }
+
+    .close-modal:hover {
+        color: #333;
+    }
+
+    .close-modal:focus {
+        color: black;
+        text-decoration: none;
+        outline: none;
+    }
+
+    @media (max-width: 768px) {
+        .modal-content {
+            width: 95%;
+            padding: 20px 15px;
+            margin-bottom: 1.5rem;
+        }
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const modal = document.getElementById('sovereignYouthModal');
+        const btn = document.getElementById('sovereignYouthBtn');
+        const span = document.getElementsByClassName('close-modal')[0];
+        if (btn && modal) {
+            btn.onclick = function (e) {
+                e.preventDefault();
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            };
+        }
+        if (span) {
+            span.onclick = function () {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            };
+        }
+        if (modal) {
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            };
+        }
+    });
+</script>
